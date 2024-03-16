@@ -28,7 +28,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(ImgPort/background.JPG);
+    background-image: url(ImgPort/170407220919-06-iconic-mountains-mount-fitz-roy-restricted.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -42,12 +42,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 .logo{
     width: 140px;
-    font-family: "Poppins";
+    font-family: Poppins;
     font-size: 70px;
-    color: black;
+    color: white;
     
 
 } 
@@ -61,7 +62,7 @@ nav ul li{
 
 }
 nav ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 40px;
     position: relative;

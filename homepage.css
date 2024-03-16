@@ -1,0 +1,84 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: skyblue;
+    margin: 0 0;
+    font-family: Poppins;
+    font-size: 1.25rem;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px 10%;
+    width: 80%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: snow;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-home {
+    width: 15%;
+    margin: 0 3%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+/* navbar code^^*/
+
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10% 0;
+    margin-top: 5%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.hero-header {
+    font-size: 4rem;
+}
+
+.hero-study {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+.study-text {
+    width: 70%;
+}
+
+.study-button {
+    border-color: snow;
+    border-radius: 20px;
+    background-color: snow;
+    padding: 15px;
+    width: 20%;
+}
