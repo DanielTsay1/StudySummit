@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: 'Poppins';
-    src: url(ImgPort/Poppins-Regular.ttf);
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +10,9 @@ html{
 }
 body{
     background: skyblue;
-    color: white;
+    color: black;
     font-family: Poppins;
+
     
 
 }
@@ -120,17 +116,17 @@ nav ul li a:hover::after{
 }
 
 .Sub{
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 60px;
+    font-weight: 400;
     color: white;
 }
 .Subb{
-    font-size: 30px;
+    font-size: 40px;
 }
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 .tab-links{
@@ -163,7 +159,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: white;
-    font-size: 30px;
+    font-size: 50px;
 }
 .tab-contents{
     display: none;
@@ -281,7 +277,7 @@ nav ul li a:hover::after{
     height: 100%;
  }
  .btn{
-    display: block;
+    /* display: block;
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ffb7c5;
@@ -289,12 +285,134 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
+    transition: background 0.5s; */
+
+    
+    /* width: fit-content; */
+    border: 1px solid #ffb7c5;
+    padding: 14px 50px;
+
+    text-decoration: none;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 450px;
+    height: 250px;
+    background: skyblue;
+    border-radius: 75px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
     transition: background 0.5s;
+    
+  
  }
  .btn:hover{
-    background: #ffb7c5;
+    background: #dfdfdf;
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+
 
  }
+ 
+.btn:hover::before, .btn:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .btn:hover:after {
+    background: rgb(243, 94, 94);
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
 /* -------contact--------- */
 .contact-left{
     flex-basis: 35%;
@@ -323,12 +441,16 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover {
-    color: #ffb7c5;
+    color: #ababab;
     transform: translateY(-5px);
+}
+.btn{
+    font-size: 60px;
 }
 .btn.btn2{
     display: inline-block;
-    background: #ffb7c5;
+    background: black;
+    
 }
 .contact-right form{
     width: 100%;
@@ -341,7 +463,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 6px;
 }
 form .btn2{
@@ -354,7 +476,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #dfdfdf;
     font-weight: 300;
     margin-top: 20px;
 
@@ -405,4 +527,7 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+html{
+    scroll-behavior: smooth;
 }

@@ -9,7 +9,7 @@ body{
     font-size: 1.25rem;
 }
 
-.container {
+.hero-container {
     display: flex;
     width: 100%;
     padding: 10px 10%;
@@ -24,6 +24,14 @@ body{
     background-color: snow;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px 10%;
+    width: 80%;
+    color: white;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -33,6 +41,7 @@ body{
     flex-direction: row;
     background-color: snow;
     justify-content: space-between;
+    align-content: center;
     padding: 1rem 1rem;
 }
 
@@ -51,6 +60,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     width: 50%;
+    align-items: center;
+
 }
 
 /* navbar code^^*/
@@ -95,20 +106,19 @@ body{
     width: 20%;
 }
 
-.math-section {
-    background-color: snow;
+.topic-section {
     width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.math-title {
+.section-title {
     font-size: 1.75rem;
     padding: 1rem;
 }
 
-.math-resources {
+.resources {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,4 +131,95 @@ body{
 
 .general-resources {
     width: 50%;
+}
+
+.resource-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.resource-list li a:hover{
+    color: skyblue
+}
+
+.alt-resource-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.alt-resource-list li a:hover{
+    color: black;
+}
+
+
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    left: 400px
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #ffb7c5;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover {
+    color: #ababab;
+    transform: translateY(-5px);
+}
+.btn{
+    font-size: 60px;
+    color: white;
+}
+.btn.btn2{
+    display: inline-block;
+    background: black;
+    
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #dfdfdf;
+    font-weight: 300;
+    margin-top: 20px;
+
 }
