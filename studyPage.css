@@ -56,21 +56,74 @@ body {
 .bold {
     font-weight: bold;
 }
-.block{
-
+.block1{
+    position: absolute;
+    left: 0px;
+    top: 225px;
     width: 200px;
     height: 200px;
     padding: 15px 25px;
     display: inline-block;
     border-radius:10px;
     box-sizing: border-box;
-    margin: 10px 15px;
+    margin: 10px 900px;
     background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
 
 }
-.column{
-    flex-basis: 50%;
+.block2{
+    position: absolute;
+    left: 0px;
+    top: 450px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 10px 900px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+
 }
-.study1{
-    margin-left: 900;
+.block3{
+    position: absolute;
+    left: 15px;
+    top: 225px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 10px 1120px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+
+}
+.block4{
+    position: absolute;
+    left: 13px;
+    top: 461px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 0px 1120px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+
+}
+.blocks{
+    margin-top: 50px;
 }
