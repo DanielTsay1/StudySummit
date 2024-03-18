@@ -10,7 +10,7 @@ html{
 }
 body{
     background: skyblue;
-    color: black;
+    color: white;
     font-family: Poppins;
 
     
@@ -18,7 +18,7 @@ body{
 }
 .multiText{
     
-    color: rgb(0, 0, 0);
+    color: black;
     
 }
 
@@ -29,6 +29,8 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    
 }
 .container{
     padding: 10px 10%;
@@ -53,6 +55,7 @@ nav{
 } 
 #h1c{
     font-size: 50px;
+    color: black;
 }
 nav ul li{
     display: inline-block;
@@ -112,7 +115,7 @@ nav ul li a:hover::after{
     border-radius: 15px;
 }
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 80%;
 }
 
 .Sub{
@@ -325,14 +328,14 @@ nav ul li a:hover::after{
     position: absolute;
     width: 250px;
     height: 250px;
-    background: #FDA8CF;
+    background: rgb(10, 151, 207);
     border-radius: 75px;
     z-index: -1;
     animation: 1s clockwise infinite;
   }
   
   .btn:hover:after {
-    background: rgb(243, 94, 94);
+    background: rgb(15, 111, 227);
     animation: 2s counterclockwise infinite;
   }
   
