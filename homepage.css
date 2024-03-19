@@ -81,6 +81,7 @@ body::-webkit-scrollbar {
 .nav-home {
     width: 15%;
     margin: 0 3%;
+    align-self: center;
 }
 
 .nav-list {
@@ -89,22 +90,19 @@ body::-webkit-scrollbar {
     justify-content: space-evenly;
     width: 50%;
     align-items: center;
+}
+
+.nav-item{
+    padding: 5px  15px;
+    transition: .5s ease;
 
 }
 
 /* -------------hover affect for nav bar-------------- */
-nav ul li a ::after{
-    content: '';
-    width: 0;
-    height: 6px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a ::after{
-    width: 100%
+.nav-item:hover{
+    background-color: rgb(197, 197, 197);
+    border-radius: 15px;
+    transition-duration: all 0.7s ease-in-out; 
 }
 /* -------------end------------ */
 
@@ -138,6 +136,21 @@ nav ul li a ::after{
     text-align: center;
 }
 
+.hero-image-container {
+    display: flex;
+    width: 50%;
+    padding: 40px;
+    align-self: center;
+    justify-content: center;
+}
+
+.hero-image {
+    border-radius: 40px;
+    background: transparent;
+    border-color:skyblue;
+    width: 100%;
+}
+
 .study-text {
     width: 70%;
 }
@@ -154,7 +167,8 @@ nav ul li a ::after{
 
 .study-button:hover {
     border-radius: 30px;
-    padding: 25px;
+    background-color: rgb(197, 197, 197);
+
 }
 
 .topic-section {
@@ -167,11 +181,14 @@ nav ul li a ::after{
 .section-title {
     font-size: 2rem;
     padding: 1rem;
+    font-weight: bold;
 }
 
 .alt-section-title{
     font-size: 2rem;
     padding: 1rem;
+    font-weight: bold;
+
 }
 
 .resources {
@@ -184,7 +201,6 @@ nav ul li a ::after{
 
 .ap-resources {
     width: 50%;
-
 }
 
 .general-resources {
@@ -193,6 +209,7 @@ nav ul li a ::after{
 
 .resource-list li a{
     text-decoration: none;
+    text-decoration: underline;
     color: black;
     transition-duration: 0.35s;
 }
@@ -203,6 +220,7 @@ nav ul li a ::after{
 
 .alt-resource-list li a{
     text-decoration: none;
+    text-decoration: underline;
     color: snow;
     transition-duration: 0.35s;
 }
@@ -261,11 +279,11 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-.copyright{
+.copyrt{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #dfdfdf;
+    background: skyblue;
     font-weight: 300;
     margin-top: 20px;
 
@@ -277,4 +295,13 @@ form .btn2{
     width: 80%;
     background-color: snow;
     padding-bottom: 4rem;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #dfdfdf;
+    font-weight: 300;
+    margin-top: 20px;
+
 }

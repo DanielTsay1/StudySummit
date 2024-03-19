@@ -23,6 +23,7 @@ body::-webkit-scrollbar {
     right: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 0;
+    cursor: pointer;
 }
 
 .overlay.show {
@@ -33,6 +34,8 @@ body::-webkit-scrollbar {
     display: block;
     border-color: gray;
     border-width: 2px;
+    cursor: pointer;
+
 }
 
 .hero-container {
@@ -108,22 +111,6 @@ body::-webkit-scrollbar {
     transition: all .5s ease-in-out;
 }
 
-/* -------------hover affect for nav bar-------------- */
-nav ul li a ::after{
-    content: '';
-    width: 0;
-    height: 6px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a ::after{
-    width: 100%
-}
-/* -------------end------------ */
-
 /* navbar code^^*/
 
 .hero {
@@ -153,6 +140,18 @@ nav ul li a ::after{
     justify-content: space-between;
     padding: 10px;
     text-align: center;
+}
+
+.hero-image-container {
+    display: flex;
+    width: 0%;
+    padding: 0px;
+    align-self: center;
+    justify-content: center;
+}
+
+.hero-image {
+    display: none;
 }
 
 .study-text {
