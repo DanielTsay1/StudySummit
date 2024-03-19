@@ -4,14 +4,20 @@
         <!--main css-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="homepage.css">
+
+        <link rel="stylesheet" media="screen and (max-width: 720px)" href="homepagemobile.css">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>summit scholars</title>
         <link rel="icon" href="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg">
+        <script type="text/javascript" src="homepage.js"></script>
     </head>
     <body>
+        <div class="overlay"></div>
         <div class="nav-bar">
             <div class="nav-home">
                 
@@ -20,8 +26,11 @@
                 </a>
                 
             </div>
-
+            <div class="menu-button" type="button">
+                Menu
+            </div>
             <div class="nav-list">
+                
                 <div class="nav-item">
                     <a id="link" href="#Math">
                         Math
@@ -72,13 +81,16 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
     <div id = Math>
         <div class="alt-container">
             <div class="topic-section">
                 <div class="section-title">
                     Math Resources
                 </div>
-                 <div class="resources">
+                <div class="resources">
                     <div class="ap-resources">
                         AP Resources
                         <ul class="resource-list">
@@ -104,7 +116,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
                     <div class="general-resources">
                         General Resources
                         <ul class="resource-list">
@@ -132,7 +144,7 @@
     <div id = Science>
         <div class="container">
             <div class="topic-section">
-                <div class="section-title">
+                <div class="alt-section-title">
                     Science Resources
                 </div>
                 <div class="resources">
@@ -166,7 +178,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
                     <div class="general-resources">
                         General Resources
                         <ul class="alt-resource-list">
@@ -218,7 +230,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
                     <div class="general-resources">
                         General Resources
                         <ul class="resource-list">
@@ -247,7 +259,7 @@
     <div id = History>
         <div class="container">
             <div class="topic-section">
-                <div class="section-title">
+                <div class="alt-section-title">
                     History Resources
                 </div>
                 <div class="resources">
@@ -276,7 +288,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
                     <div class="general-resources">
                         General Resources
                         <ul class="alt-resource-list">
@@ -298,10 +310,10 @@
 
 
         <div id="contact">
-        <div class="alt-container">
+        <div class="footer-container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="Sub">Want to add Links? Contact us here!</h1>
+                    <h1 class="contact-text">Have a suggestion for resources? Contact us here!</h1>
                     <p><i class="fa-regular fa-envelope"></i>...@gmail.com</p>
                 </div>
                 <div class="contact-right">
@@ -315,7 +327,6 @@
                 </div>
             </div>
         </div>
-
 
 
         
