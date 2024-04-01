@@ -1,0 +1,343 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: skyblue;
+    margin: 0 0;
+    font-family: Poppins;
+    font-size: 1.25rem;
+}
+.study{
+    margin-left: 70px;
+    margin-top: 100px;
+    color: #000000;
+    font-size: 5rem;
+    left:20px;
+    font-weight: bold;
+}
+.words{
+    margin-left:93px;
+    font-size: 2rem;
+    color: black;
+}
+.button{
+    margin-left: 215px;
+    width: 180px;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding:1rem 1rem;
+    background-color: snow;
+
+}
+.nav-home {
+    width: 15%;
+    margin: 0 3%;
+    align-self: center;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 5px  15px;
+    transition: .5s ease;
+
+}
+
+.nav-item:hover{
+    background-color: rgb(197, 197, 197);
+    border-radius: 15px;
+    transition-duration: all 0.7s ease-in-out; 
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+.bold {
+    font-weight: bold;
+}
+.block1{
+    position: absolute;
+    left: 100px;
+    top: 225px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 10px 900px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+.block2{
+    position: absolute;
+    left: 100px;
+    top: 450px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 10px 900px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+.block3{
+    position: absolute;
+    left: 115px;
+    top: 225px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 10px 1120px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+.block4{
+    position: absolute;
+    left: 115px;
+    top: 461px;
+    width: 200px;
+    height: 200px;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius:10px;
+    box-sizing: border-box;
+    margin: 0px 1120px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.blocks{
+    margin-top: 50px;
+    text-decoration: none;
+}
+.container1{
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    width: 80%;
+    padding: 10px 10%;
+    height:640px;
+}
+.miniHeader{
+    margin-top: 30px;
+    font-size: 50px;
+    margin-left: -70px;
+    width:400px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.podText{
+    margin-top:30px;
+    width:500px;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;  
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.button1{
+    margin-left: 506px;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    height: 125px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: skyblue;
+    position: absolute;
+    left:270px;
+    top:1230px;
+    cursor: pointer;
+    font-family: Poppins;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.container2{
+    display: absolute;
+    background-color: skyblue;
+    width: 80%;
+    padding: 10px 10%;
+    height:600px;
+    padding: 10px 10%;
+}
+.button2{
+    margin-left: 506px;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    height: 125px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #fff;
+    position: absolute;
+    left:270px;
+    top:1850px;
+    cursor: pointer;
+    font-family: Poppins;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px 10%;
+    width: 80%;
+    color: white;
+}
+.button3{
+    margin-left: 506px;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    height: 125px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: skyblue;
+    position: absolute;
+    left:270px;
+    top:2510px;
+    cursor: pointer;
+    font-family: Poppins;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+.button4{
+    margin-left: 506px;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    height: 125px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #fff;
+    position: absolute;
+    left:270px;
+    top:3130px;
+    cursor: pointer;
+    font-family: Poppins;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+
+#link {
+    text-decoration: none;
+}
+
+.conclusion {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 7%;
+    font-size: 1.5rem;
+    background: snow;
+}
+
+.conclusion-title {
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.conclusion-text {
+    padding: 20px;
+}
+
+.footer-container {
+    background-color: snow;
+    padding: 10% 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.homepage-button {
+    border-radius: 20px;
+    background-color: skyblue;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: skyblue;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.button1:hover {
+    background-color:rgb(212, 212, 212);
+}
+.button2:hover {
+    background-color:rgb(212, 212, 212);
+
+}
+.button3:hover {
+    background-color:rgb(212, 212, 212);
+
+}
+.button4:hover {
+    background-color:rgb(212, 212, 212);
+
+}
+.homepage-button:hover {
+    background-color:rgb(212, 212, 212);
+}
+.button:hover {
+    background-color:rgb(212, 212, 212);
+}
+.youtube{
+  object-fit: contain;
+}
