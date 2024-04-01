@@ -197,7 +197,7 @@ body {
     transition-property: all;
 }
 .container2{
-    display: flex;
+    display: absolute;
     background-color: skyblue;
     width: 80%;
     padding: 10px 10%;
@@ -336,4 +336,7 @@ body {
 }
 .button:hover {
     background-color:rgb(212, 212, 212);
+}
+.youtube{
+  object-fit: contain;
 }
