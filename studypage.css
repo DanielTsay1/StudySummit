@@ -166,38 +166,48 @@ body {
     margin-top: 30px;
     font-size: 50px;
     margin-left: -70px;
-    width:400px;
+    width:30%;
     overflow-wrap: break-word;  
     word-wrap: break-word;
     word-break: break-word;
 }
 .podText{
     margin-top:30px;
-    width:500px;
+    width: 110%;
     font-size: 1.5rem;
     overflow-wrap: break-word;  
     word-wrap: break-word;
     word-break: break-word;
 }
 .button1{
-    margin-left: 506px;
-    width: 600px;
+    margin-left: 40%;
+    /* display: flex; */
+    width: 24%;
     color: rgb(0, 0, 0);
-    height: 125px;
+    height: auto;
     border: 0;
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 150%;
     background-color: skyblue;
     position: absolute;
-    left:270px;
+    /* left:10%; */
     top:1230px;
     cursor: pointer;
     font-family: Poppins;
     transition-duration: 0.5s;
     transition-property: all;
 }
+.youtube{
+    left: 10%;
+    margin-left: 40%;
+    width: 24.5%;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    height: 26%;
+}
 .container2{
-    display: absolute;
+    display: flex;
     background-color: skyblue;
     width: 80%;
     padding: 10px 10%;
@@ -205,16 +215,17 @@ body {
     padding: 10px 10%;
 }
 .button2{
-    margin-left: 506px;
-    width: 600px;
+    margin-left: 40%;
+    /* display: flex; */
+    width: 24%;
     color: rgb(0, 0, 0);
-    height: 125px;
+    height: auto;
     border: 0;
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 150%;
     background-color: #fff;
     position: absolute;
-    left:270px;
+    /* left:270px; */
     top:1850px;
     cursor: pointer;
     font-family: Poppins;
@@ -231,16 +242,18 @@ body {
     color: white;
 }
 .button3{
-    margin-left: 506px;
-    width: 600px;
+    margin-left: 40%;
+    /* display: flex; */
+    width: 24%;
     color: rgb(0, 0, 0);
-    height: 125px;
+    height: auto;
     border: 0;
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 150%;
     background-color: skyblue;
     position: absolute;
-    left:270px;
+    /* left:10%; */
+
     top:2510px;
     cursor: pointer;
     font-family: Poppins;
@@ -249,16 +262,17 @@ body {
 
 }
 .button4{
-    margin-left: 506px;
-    width: 600px;
+    margin-left: 40%;
+    /* display: flex; */
+    width: 24%;
     color: rgb(0, 0, 0);
-    height: 125px;
+    height: auto;
     border: 0;
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 150%;
     background-color: #fff;
     position: absolute;
-    left:270px;
+    /* left:10%; */
     top:3130px;
     cursor: pointer;
     font-family: Poppins;
@@ -336,7 +350,4 @@ body {
 }
 .button:hover {
     background-color:rgb(212, 212, 212);
-}
-.youtube{
-  object-fit: contain;
 }
