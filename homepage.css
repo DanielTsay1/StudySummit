@@ -305,3 +305,9 @@ form .btn2{
     margin-top: 20px;
 
 }
+#msg{
+    color: skyblue;
+    /* margin-top: -10px; */
+    display: block;
+
+}

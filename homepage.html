@@ -331,5 +331,24 @@
         <div class="copyrt">
             <p>© Copyright Daniel Tsay, Ethan Tay, Brian Lin. All Rights Reserved</p>
         </div>
+
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxG3D3ncXyYnsLAcUMzw9aVloPonEGBvBnOWgAJYJfJaBrWb4IfzVJT8cYhnU6ic1MH/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{
+                    msg.innerHTML = "Request sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                 })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
