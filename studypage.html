@@ -5,17 +5,25 @@
         <meta name = "viewport" content = "witdh=device-width, initial-scale=1.0">
         <title>Study Summit</title>
         <link rel = "stylesheet" href="studypage.css">
+        <link rel="stylesheet" media="screen and (max-width: 720px)" href="studypagemobile.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="https://cdn.pixabay.com/photo/2014/08/23/10/54/mountain-425134_640.jpg">
+        <script type="text/javascript" src="general.js"></script>
+
     </head>
     <body>
+        <div class="overlay"></div>
         <div class="nav-bar">
             <div class="nav-home">
                 <a id="link" class="bold" href="homepage.html">
                     Study Summit
                 </a>
+            </div>
+            <div class="menu-button" type="button">
+                Menu
             </div>
             <div class="nav-list">
                 <div class="nav-item">
@@ -59,13 +67,12 @@
             </div>
         </div>
 
-        <div class="re-container">
-            
-        </div>
-
-        <div class = "container1"id = "pod">
-            <div class = "miniHeader">Pomodoro
-                <div class = "podText" >
+        <div class="alt-re-container">
+            <div class="section-container">
+                <div class = "section-title">
+                    Pomodoro
+                </div>
+                <div class = "section-content">
                     The Pomodoro Technique is an approach to studying 
                     that involves studying in intervals of 
                     25 minutes work sessions seperated by short breaks of 5 minutes. 
@@ -77,54 +84,71 @@
                 </div>
             </div>
         </div>
-        <div class = "container2" id = "active">
-            <div class = "miniHeader">Active Recall
-                <div class = "podText" >
+
+        <div class="re-container">
+            <div class="section-container">
+                <div class = "section-title">
+                    Active Recall
+                </div>
+                <div class = "section-content">
                     Active recall is a study technique where you retrieve information
-                     from memory without relying on external aids like notes or textbooks. Typically this is done through flashcards or quizlet.
-                      This method encourages deeper engagement with the material and enhances long-term retention of the information being studied.
-                </div>  
-            </div>
-        </div>
-        <div class = "container1">
-            <div class = "miniHeader" id = "spaced">Spaced Repetition
-                <div class = "podText">
-                    Spaced repetition is a study technique involving reviewing information in spaced intervals over time.
-                       This method leverages the spacing effect, which suggests that
-                         information is better retained when repeated over spaced intervals rather
-                          than in a single session. As a result, spaced repetition is able to optimize
-                           long-term memory retention while minimizing the time needed for review.
+                    from memory without relying on external aids like notes or textbooks. 
+                    Typically this is done through flashcards or Quizlet.
+                    This method encourages deeper engagement with the material and 
+                    enhances long-term retention of the information being studied.
                 </div>
             </div>
         </div>
-        <div class = "container2">
-            <div class = "miniHeader" id = "feynman">Feynman Technique
-                <div class = "podText">
+
+        <div class="alt-re-container">
+            <div class="section-container">
+                <div class = "section-title">
+                    Spaced Repetition
+                </div>
+                <div class = "section-content">
+                    Spaced repetition is a study technique involving reviewing information in spaced intervals over time.
+                    This method leverages the spacing effect, which suggests that
+                    information is better retained when repeated over spaced intervals rather
+                    than in a single session. As a result, spaced repetition is able to optimize
+                    long-term memory retention while minimizing the time needed for review.
+                </div>
+            </div>
+        </div>
+        
+        <div class="re-container">
+            <div class="section-container">
+                <div class = "section-title">
+                    Feynman Technique
+                </div>
+                <div class = "section-content">
                     The Feynman Technique is a learning method centered around the
-                     concept of teaching a subject to someone else. By teaching the material you 
-                      are forced to confront any gaps in understanding.
-                         The act of explaining the topic helps solidify
-                          one's own understanding and retention of the material.
-                </div>  
+                    concept of teaching a subject to someone else. By teaching the material you 
+                    are forced to confront any gaps in understanding.
+                    The act of explaining the topic helps solidify
+                    one's own understanding and retention of the material.
+                </div>
             </div>
         </div>
 
-        <div class="conclusion">
-            <div class="conclusion-title">
-                Takeaways and conclusion
-            </div>
-            <div class="conclusion-text">
-                While there are many ways and strategies to approach studying, in the end you have
-                to find what works for you. It may involve testing many techniques or creating your
-                own, but find a technique that works for you and that you can stick to. A universal 
-                tip for all students taking tests is to take practice tests at least a week before 
-                the actual test. The law of specificity says that if you want to get better at something, 
-                you need to practice that exact thing. This means taking timed practice tests if 
-                that is what you are practicing for. Especially AP students, practice tests will
-                carry you to your desired score. Armed with this information, we hope you find
-                this website useful! Happy studying!!
+        <div class="alt-re-container">
+            <div class="conclusion">
+                <div class="conclusion-title">
+                    Takeaways and conclusion
+                </div>
+                <div class="conclusion-text">
+                    While there are many ways and strategies to approach studying, in the end you have
+                    to find what works for you. It may involve testing many techniques or creating your
+                    own, but find a technique that works for you and that you can stick to. A universal 
+                    tip for all students taking tests is to take practice tests at least a week before 
+                    the actual test. The law of specificity says that if you want to get better at something, 
+                    you need to practice that exact thing. This means taking timed practice tests if 
+                    that is what you are practicing for. Especially AP students, practice tests will
+                    carry you to your desired score. Armed with this information, we hope you find
+                    this website useful! Happy studying!!
+                </div>
             </div>
         </div>
+        
 
         <div class="footer-container">
             <button type="button" class="homepage-button">
