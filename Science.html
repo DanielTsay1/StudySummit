@@ -17,6 +17,7 @@
         <script type="text/javascript" src="general.js"></script>
     </head>
     <body>
+       
         <div class="overlay"></div>
         <div class="nav-bar">
             <div class="nav-home">
@@ -33,23 +34,34 @@
                         About Us
                     </a>
                 </div>
-
+                
                 <div class="nav-item">
                     <a id="link" href="homepage.html">
                         Home
                     </a>
                 </div>
-                
                 <div class="nav-item">
                     <a id="link" href="Math.html">
                         Math
                     </a>
                 </div>
-                <div class="nav-item">
-                    <a id="link" href="Science.html">
-                        Science
-                    </a>
-                </div>
+
+                  <div class="dropdown" >
+                    <button class="dropbtn">Science
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#Physics">Physics</a>
+                      <a href="#Bio">Biology</a>
+                      <a href="#Chem">Chemistry</a>
+                      <a href="#CSP">AP Computer Science Principles</a>
+                      <a href="#CSA">AP Computer Science A</a>
+                      <a href="#EnvSci">Environmental Science</a>
+                      <a href="#Astronomy">Astronomy</a>
+                      <a href="#PhysicsC">AP Physics C</a>
+                    </div>
+                  </div>
+
                 <div class="nav-item">
                     <a id="link" href="#ELA">
                         ELA
@@ -74,12 +86,12 @@
             <div class="hero">
                 <div class="hero-text">
                     <div class="hero-header">
-                        Begin your journey to the top!
+                        Begin your Science journey
                     </div>
                     <br>
                     <br>
                     <br>
-                    <div class="hero-study">
+                    <!-- <div class="hero-study">
                         <div class="study-text">
                             Before you start studying, learn how to study efficiently and effectively!
                             Once you finish, come back here and scroll down to find the resources! 
@@ -89,7 +101,7 @@
                                 Learn how to study!
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="hero-image-container">
                     <img class="hero-image" src="https://resources.rawpixel.com/image_900/cmF3cGl4ZWwtZGVzaWduLXByb2Q6OmRlc2lnbi9wcmV2aWV3LzY5NTgyMjkvMDFoeWtnbXlnNXNlZnZ3Ym5oc3M5OWhlejMvMDFoeWtnbXlnNXNlZnZ3Ym5oc3M5OWhlejMuanBn.jpg?s=WYOTS6Jiv9mJPP9XwRQPVkbCLhEzjDeuJra2bZk5pk8&v=1716494445&expires=1716523200">
@@ -99,41 +111,41 @@
         <br>
         <br>
         <br>
-    <div id = Math>
+    <div id = Physics>
         <div class="alt-container">
             <div class="topic-section">
                 <div class="section-title">
-                    Math Resources
+                    Physics
                 </div>
                 <div class="resources">
                     <div class="ap-resources">
                         AP Resources
                         <ul class="resource-list">
                             <li>
-                                <a href="https://fiveable.me/">
-                                    Fiveable - has guides and questions for AP Calculus AB/BC
+                                <a href="https://www.mathplanet.com/education/algebra-1">
+                                    Math Planet - easy to follow guide through algebra 1
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has videos and questions for AP Calculus AB/BC
+                                <a href="https://www.khanacademy.org/math/algebra">
+                                    Khan Academy - has great videos and questions to learn Algebra 1
                                 </a>
                             </li>
                             <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work for both AP Calculus AB/BC
+                                <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
+                                    The Organic Chemistry Teacher - a video that provides a well thourough and comprehensive review of algebra 1
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.crackap.com/index.html">
-                                    Crack AP - PLENTY of practice tests here for Math APs
+                                <a href="https://www.ixl.com/math/algebra-1">
+                                    IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
                                 </a>
                             </li>
                         </ul>
                     </div>
                 
                     <div class="general-resources">
-                        General Resources
+                        Resources
                         <ul class="resource-list">
                             <li>
                                 <a href="https://www.khanacademy.org/">
@@ -156,11 +168,11 @@
             </div>
         </div>
     <!--Math Section ^^-->
-    <div id = Science>
+    <div id = Bio>
         <div class="container">
             <div class="topic-section">
                 <div class="alt-section-title">
-                    Science Resources
+                    Biology
                 </div>
                 <div class="resources">
                     <div class="ap-resources">
@@ -218,11 +230,11 @@
             </div>
         </div>
         <!--Science Section ^^-->
-    <div id = ELA>
+    <div id = Chem>
         <div class="alt-container">
             <div class="topic-section">
                 <div class="section-title">
-                    ELA Resources
+                    Chemistry
                 </div>
                 <div class="resources">
                     <div class="ap-resources">
@@ -271,11 +283,11 @@
         </div>
     
         <!--ELA section^^-->
-    <div id = History>
+    <div id = CSP>
         <div class="container">
             <div class="topic-section">
                 <div class="alt-section-title">
-                    History Resources
+                    AP Computer science principles
                 </div>
                 <div class="resources">
                     <div class="ap-resources">
@@ -323,6 +335,222 @@
             </div>
         </div>
 
+        <div id = CSA>
+            <div class="alt-container">
+                <div class="topic-section">
+                    <div class="section-title">
+                        AP Computer Science A
+                    </div>
+                    <div class="resources">
+                        <div class="ap-resources">
+                            Resources
+                            <ul class="resource-list">
+                                <li>
+                                    <a href="https://www.mathplanet.com/education/algebra-1">
+                                        Math Planet - easy to follow guide through algebra 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.khanacademy.org/math/algebra">
+                                        Khan Academy - has great videos and questions to learn Algebra 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
+                                        The Organic Chemistry Teacher - a video that provides a well thourough and comprehensive review of algebra 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ixl.com/math/algebra-1">
+                                        IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <!-- <div class="general-resources">
+                            Resources
+                            <ul class="resource-list">
+                                <li>
+                                    <a href="https://www.khanacademy.org/">
+                                        Khan Academy - has videos and questions for all math K-12
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mathigon.org/">
+                                        Mathigon - courses on math through the middle school and high school level
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://openstax.org/subjects/math">
+                                        Openstax - textbook style content on all high school math topics
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id = EnvSci>
+                <div class="container">
+                    <div class="topic-section">
+                        <div class="alt-section-title">
+                            Environmental Science
+                        </div>
+                        <div class="resources">
+                            <div class="ap-resources">
+                                AP Resources
+                                <ul class="alt-resource-list">
+                                    <li>
+                                        <a href="https://fiveable.me/">
+                                            Fiveable - has guides and questions for all history APs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.khanacademy.org/">
+                                            Khan Academy - has courses for AP US History, AP Gov., and AP World History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://myap.collegeboard.org/login">
+                                            AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.crackap.com/index.html">
+                                            Crack AP - PLENTY of practice tests here for History APs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="general-resources">
+                                General Resources
+                                <ul class="alt-resource-list">
+                                    <li>
+                                        <a href="https://www.khanacademy.org/">
+                                            Khan Academy - has resources for a lot of history content
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://openstax.org/subjects/humanities">
+                                            Openstax - textbook style content on World History and US History
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = Astronomy>
+                    <div class="alt-container">
+                        <div class="topic-section">
+                            <div class="section-title">
+                                Astronomy
+                            </div>
+                            <div class="resources">
+                                <div class="ap-resources">
+                                    Resources
+                                    <ul class="resource-list">
+                                        <li>
+                                            <a href="https://www.mathplanet.com/education/algebra-1">
+                                                Math Planet - easy to follow guide through algebra 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.khanacademy.org/math/algebra">
+                                                Khan Academy - has great videos and questions to learn Algebra 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
+                                                The Organic Chemistry Teacher - a video that provides a well thourough and comprehensive review of algebra 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.ixl.com/math/algebra-1">
+                                                IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                                <!-- <div class="general-resources">
+                                    Resources
+                                    <ul class="resource-list">
+                                        <li>
+                                            <a href="https://www.khanacademy.org/">
+                                                Khan Academy - has videos and questions for all math K-12
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://mathigon.org/">
+                                                Mathigon - courses on math through the middle school and high school level
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://openstax.org/subjects/math">
+                                                Openstax - textbook style content on all high school math topics
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>   
+             
+                <div id = PhysicsC>
+                    <div class="container">
+                        <div class="topic-section">
+                            <div class="alt-section-title">
+                                AP Physics C
+                            </div>
+                            <div class="resources">
+                                <div class="ap-resources">
+                                    AP Resources
+                                    <ul class="alt-resource-list">
+                                        <li>
+                                            <a href="https://fiveable.me/">
+                                                Fiveable - has guides and questions for all history APs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.khanacademy.org/">
+                                                Khan Academy - has courses for AP US History, AP Gov., and AP World History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://myap.collegeboard.org/login">
+                                                AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.crackap.com/index.html">
+                                                Crack AP - PLENTY of practice tests here for History APs
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="general-resources">
+                                    General Resources
+                                    <ul class="alt-resource-list">
+                                        <li>
+                                            <a href="https://www.khanacademy.org/">
+                                                Khan Academy - has resources for a lot of history content
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://openstax.org/subjects/humanities">
+                                                Openstax - textbook style content on World History and US History
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
 
         <div id="contact">
         <div class="footer-container">
