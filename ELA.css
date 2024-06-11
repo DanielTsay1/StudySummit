@@ -341,7 +341,7 @@ form .btn2{
   .navbar a:hover, .dropdown:hover .dropbtn {
     
     background-color: rgb(197, 197, 197);
-    border-radius: 15px;
+    
     transition-duration: all 0.7s ease-in-out; 
   }
   
@@ -368,7 +368,7 @@ form .btn2{
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
-    padding: 5px  15px;
+  
     transition: .5s ease;
     
   }

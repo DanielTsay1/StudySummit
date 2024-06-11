@@ -368,7 +368,6 @@ form .btn2{
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
-    padding: 5px  15px;
     transition: .5s ease;
     
   }
