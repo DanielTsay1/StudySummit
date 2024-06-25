@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 .hero-container {
     display: flex;
     width: 100%;
-    padding: 10% 10%;
+    padding: 6% 10%;
     width: 80%;
 }
 
@@ -116,8 +116,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 10% 0;
-    margin-top: 5%;
 }
 
 .hero-text {

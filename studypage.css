@@ -35,49 +35,80 @@ body::-webkit-scrollbar {
     display: block;
 }
 
+.hero-container {
+    display: flex;
+    width: 100%;
+    padding: 6% 10%;
+    width: 80%;
+}
+
+.alt-container { /* alternate container holding info */
+    display: flex;
+    width: 100%;
+    padding: 10% 10%;
+    width: 80%;
+    color: white;
+    background-color:#4d4567; /*container background color */
+}
+
+.container { /* container holding info */
+    display: flex;
+    width: 100%;
+    padding: 10px 10%;
+    width: 80%;
+    color: white;
+    background-color:#171028; /*container background color */
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
+    background-color: #4d4567; /*navbar background color*/
     justify-content: space-between;
     align-content: center;
-    padding:1rem 1rem;
-    background-color: snow;
-
+    padding: 1rem 1rem;
 }
+
+#link {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
 .nav-home {
     width: 15%;
     margin: 0 3%;
     align-self: center;
 }
+
 .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 55%;
     align-items: center;
 }
 
 .nav-item{
     padding: 5px  15px;
     transition: .5s ease;
+    border-radius: 15px;
 
 }
 
+/* -------------hover affect for nav bar-------------- */
 .nav-item:hover{
-    background-color: rgb(197, 197, 197);
+    background-color: #8c80AA; /*hover color for navbar*/
     border-radius: 15px;
     transition-duration: all 0.7s ease-in-out; 
 }
+/* -------------end------------ */
 
-#link {
-    text-decoration: none;
-    color: black;
-    transition: 1s;
-}
-
-.bold {
-    font-weight: bold;
-}
+/* navbar code^^*/
 
 .re-container {
     display: flex;
@@ -138,24 +169,6 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
     padding: 1rem 0;
     text-decoration: none;
-}
-
-.conclusion {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    background: snow;
-}
-
-.conclusion-title {
-    font-size: 2rem;
-    padding: 1rem 0;
-    font-weight: bold;
-}
-
-.conclusion-text {
-    font-size: 1.5rem;
-    padding: 1rem 0;
 }
 
 
