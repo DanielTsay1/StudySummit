@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #171028; /*background color*/
+    margin: 0 0;
+    font-family: Poppins;
+    font-size: 1.25rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.study-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: end;
+}
+
+
+.logo {
+    display:flex;
+    flex-direction: row;
+    background-color:#4d4567; /*logo background color */
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.quick-title {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 30%;
+    align-self: flex-end;
+    font-size: 20px;
+    background-color:#4d4567; /*link list background color */
+}
+
+.quick-title-padding {
+    padding: 20px;
+}
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    background-color:#4d4567; /*link list background color */
+    height: 80%;
+    width: 30%;
+    justify-content: space-evenly;
+    align-self: flex-end;
+}
+.quick-item {
+    display: flex;
+    border: solid;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}

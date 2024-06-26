@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    background: skyblue;
+    background: #171028; /*background color*/
     margin: 0 0;
     font-family: Poppins;
     font-size: 1.25rem;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 55%;
+    width: 85%;
     align-items: center;
 }
 
