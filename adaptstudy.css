@@ -39,11 +39,17 @@ body::-webkit-scrollbar {
     width: 50%;
     height: 100%;
 }
-
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+}
 .container-right {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
     height: 100%;
     justify-content: end;
 }
@@ -67,7 +73,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     height: 10%;
-    width: 30%;
+    width: 80%;
     align-self: flex-end;
     font-size: 20px;
     background-color:#4d4567; /*link list background color */
@@ -80,8 +86,8 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     background-color:#4d4567; /*link list background color */
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 80%;
     justify-content: space-evenly;
     align-self: flex-end;
 }
@@ -99,16 +105,30 @@ body::-webkit-scrollbar {
     transition: 1s;
 }
 
-.timer {
+.timer-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #4d4567;
+}
+
+.timer-visual {
     width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
-
+    background-color: #4d4567;
 }
 
-#demo {
-    color: white;
-    
+.timer-buttons {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #4d4567;
+}
+
+.block{
+    display: inline-block;
+    width: 20%;
 }
