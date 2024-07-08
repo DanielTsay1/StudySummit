@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
-        <meta name = "viewport" content = "witdh=device-width, initial-scale=1.0">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Study Summit</title>
         <link rel = "stylesheet" href="adaptstudy.css">
 
@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="https://cdn.pixabay.com/photo/2014/08/23/10/54/mountain-425134_640.jpg">
-        <script type="text/javascript" src="general.js"></script>
+        <script type="text/javascript" src="general.js" defer></script>
 
     </head>
     <body>
@@ -25,9 +25,12 @@
             </div>
 
             <div class="container-3">
+                <!--
                 <div class="timer-container">
                     <div class="timer-visual">
-                        <span id="countdown">60s</span><span id="plural">s</span>
+                        <span id="countdown-h">60</span><span>h</span>
+                        <span id="countdown-m">60</span><span>m</span>
+                        <span id="countdown-s">60</span><span>s</span>
                     </div>
                     <div class="timer-buttons">
                         <div class="block">
@@ -38,8 +41,19 @@
                             <button id="end-button" name="end-button" class="fill" onclick="endTimer()">END</button><br><br>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="timer">
+                    <div id="time-display">00:00:00</div>
+                    <div class="buttons">
+                        <input type="number" id="hours" placeholder="HH" min="0">
+                        <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                        <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="reset">Reset</button>
+                    </div>
                 </div>
-                
             </div>
 
 
