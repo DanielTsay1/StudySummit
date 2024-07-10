@@ -25,33 +25,21 @@
             </div>
 
             <div class="container-3">
-                <!--
-                <div class="timer-container">
-                    <div class="timer-visual">
-                        <span id="countdown-h">60</span><span>h</span>
-                        <span id="countdown-m">60</span><span>m</span>
-                        <span id="countdown-s">60</span><span>s</span>
-                    </div>
-                    <div class="timer-buttons">
-                        <div class="block">
-                            <button id="start-button" name="start-button" class="fill" onclick="startTimer()">START</button><br><br>
-            
-                        </div>
-                        <div class="block">
-                            <button id="end-button" name="end-button" class="fill" onclick="endTimer()">END</button><br><br>
-                        </div>
-                    </div>
-                </div> -->
+                
 
                 <div class="timer">
                     <div id="time-display">00:00:00</div>
-                    <div class="buttons">
-                        <input type="number" id="hours" placeholder="HH" min="0">
-                        <input type="number" id="minutes" placeholder="MM" min="0" max="59">
-                        <input type="number" id="seconds" placeholder="SS" min="0" max="59">
-                        <button id="start">Start</button>
-                        <button id="pause">Pause</button>
-                        <button id="reset">Reset</button>
+                    <div class="timer-panel">
+                        <div class="timer-inputs">
+                            <input type="number" id="hours" placeholder="HH" min="0">
+                            <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                            <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                        </div>
+                        <div class="timer-controls">
+                            <button id="start">Start</button>
+                            <button id="pause">Pause</button>
+                            <button id="reset">Reset</button>
+                        </div>
                     </div>
                 </div>
             </div>
