@@ -168,13 +168,13 @@ body::-webkit-scrollbar {
 .todo-container{
     background: #4d4567;
     border: 2px solid #7f45b4;
-    padding: 20px;
+    padding: 10px;
     color: white;
     border-radius: 15px;
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
-    
+    margin-top: -600px;
     
     
   }
@@ -186,12 +186,12 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     margin-right: 5px;
     font-size: 20px;
-    display: flex;
+    /* display: flex; */
     
   }
    
   #input-button{
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.4s;
     padding: 10px;
@@ -199,6 +199,7 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     background-color: #171028;
     color: white;
+    align-items: flex-end;
   }
   
   .task button{
@@ -260,4 +261,7 @@ body::-webkit-scrollbar {
     text-decoration: line-through;
     color: gray;
     border: 1px solid gray;
+  }
+  .counter-container{
+    font-size: 15px;
   }
