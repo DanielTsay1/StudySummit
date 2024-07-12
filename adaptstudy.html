@@ -45,6 +45,49 @@
                     </div>
                 </div> -->
 
+
+<!-- ----------------------TO DO LIST----------------------------- -->
+                <div id="mydiv">
+        
+                    <div class="todo-container">
+                        <div id="mydivheader">Click here to move</div>
+                        
+                        <!-- todo list header -->
+                        <div id="header">
+                          <h3>To Do List</h3>
+                        </div>
+                        
+                        <!-- create input box -->
+                        <div id="todo-form">
+                          <input
+                            type="text"
+                            class="input-item"
+                            name="input_box"
+                            id="input-box"
+                            placeholder="Add Task"
+                          />
+                  
+                          <!-- add button  -->
+                          <button id="input-button" onclick="addTask()">Add</button>
+                        </div>
+                  
+                        <!-- task list -->
+                        <h4>Task List</h4>
+                        <ul id="list-container"></ul>
+                  
+                        <hr>
+                  
+                        <!-- task list counter  -->
+                        <div class="counter-container">
+                          <div id="task-counters">
+                            Completed: <span id="completed-counter">0</span> | Uncompleted:
+                            <span id="uncompleted-counter">0</span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+
+                 <!-- -------------------tIMER------------ -->
                 <div class="timer">
                     <div id="time-display">00:00:00</div>
                     <div class="buttons">
@@ -100,42 +143,9 @@
         </div>
         
         <!-- To do list -->
-
-        <div class="todo-container">
-            <!-- todo list header -->
-            <div id="header">
-              <h3>To Do List</h3>
-            </div>
-      
-            <!-- create input box -->
-            <div id="todo-form">
-              <input
-                type="text"
-                class="input-item"
-                name="input_box"
-                id="input-box"
-                placeholder="Add Task"
-              />
-      
-              <!-- add button  -->
-              <button id="input-button" onclick="addTask()">Add</button>
-            </div>
-      
-            <!-- task list -->
-            <h4>Task List</h4>
-            <ul id="list-container"></ul>
-      
-            <hr>
-      
-            <!-- task list counter  -->
-            <div class="counter-container">
-              <div id="task-counters">
-                Completed: <span id="completed-counter">0</span> | Uncompleted:
-                <span id="uncompleted-counter">0</span>
-              </div>
-            </div>
-          </div>
-      
+   
+          
+          
           
         
         
