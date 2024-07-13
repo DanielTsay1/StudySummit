@@ -11,11 +11,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="https://cdn.pixabay.com/photo/2014/08/23/10/54/mountain-425134_640.jpg">
         <script type="text/javascript" src="general.js" defer></script>
-       
+        <script src="https://kit.fontawesome.com/742c5343ae.js" crossorigin="anonymous"></script>
+        
        
 
     </head>
     <body>
+
+<div class="sidebar">
+    
+    
+    <a href="#" class="active" onclick="toggleVisibility()"><i class="fa-solid fa-note-sticky"></i></a>
+    <a href="#" onclick="toggleVisibility2()" ><i class="fa-solid fa-clock"></i></a>
+    <a href="#" onclick="toggleVisibility()"><i class="fa-solid fa-play"></i></a>
+    <a href="#" onclick="toggleVisibility3()"><i class="fa-solid fa-bars"></i></a>
+</div>
+        
+        
+        
         <div class="overlay"></div>
         <div class="study-container">
             <div class="container-left">
@@ -25,6 +38,7 @@
                     </a>
                 </div> 
             </div>
+          
 
             <div class="container-3">
                 <!--
@@ -44,13 +58,18 @@
                         </div>
                     </div>
                 </div> -->
+               
+
+                  <!-- Page content -->
+
+                 
 
 
 <!-- ----------------------TO DO LIST----------------------------- -->
                 <div id="mydiv">
         
                     <div class="todo-container">
-                        <div id="mydivheader">Click here to move</div>
+                        <div id="mydivheader">+</div>
                         
                         <!-- todo list header -->
                         <div id="header">
@@ -88,7 +107,11 @@
                  </div>
 
                  <!-- -------------------tIMER------------ -->
-                <div class="timer">
+                <div id = "time" class="timer">
+
+                    <div id="header">
+                        <h3>Timer</h3>
+                      </div>
                     <div id="time-display">00:00:00</div>
                     <div class="buttons">
                         <input type="number" id="hours" placeholder="HH" min="0">
@@ -100,17 +123,18 @@
                     </div>
                 </div>
             </div>
+            
 
 
-            <div class="container-right">
+            <div id = "conright">
 
                 
 
 
                 <div class="quick-title">
-                    <div class="quick-title-padding">
+                    <!-- <div class="quick-title-padding">
                         Quick Resources
-                    </div>
+                    </div> -->
                 </div>
                 <div class="quick-links">
                     <div class="quick-item">
@@ -141,8 +165,16 @@
                 </div>
             </div>
         </div>
-        
-        <!-- To do list -->
+
+    
+<!-- -------------Background image----------- -->
+          <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="Vid.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+      
    
           
           

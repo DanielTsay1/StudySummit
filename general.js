@@ -198,6 +198,7 @@ inputBox.addEventListener("keyup", function (event) {
 
 dragElement(document.getElementById("mydiv"));
 
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -236,5 +237,32 @@ function dragElement(elmnt) {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
+  }
+}
+
+
+// --------hidden function of nav bar--------
+function toggleVisibility() {
+  var box = document.getElementById("mydiv");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+function toggleVisibility2() {
+  var box = document.getElementById("time");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+function toggleVisibility3() {
+  var box = document.getElementById("conright");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
   }
 }
