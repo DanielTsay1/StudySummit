@@ -266,3 +266,12 @@ function toggleVisibility3() {
     box.style.display = "none";
   }
 }
+function toggleVisibility4() {
+  var box = document.getElementById("lofi");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+
