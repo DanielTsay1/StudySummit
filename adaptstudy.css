@@ -142,13 +142,24 @@ body::-webkit-scrollbar {
 
 .timer {
     text-align: center;
-    
+    background-color: #4d4567;
+    width: 90%;
+    height: fit-content;
+
 }
 
 #time-display {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 20px;
     width: 100%;
+    color: white;
+}
+
+.timer-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
 
 .timer-inputs {
@@ -171,9 +182,13 @@ body::-webkit-scrollbar {
 }
 
 .timer-controls button {
+  display: flex;
+  flex-direction: row;
     margin: 5px;
     padding: 10px;
     font-size: 16px;
+    width: 30%;
+
 }
 
 /* -------to do list-------- */
@@ -230,10 +245,11 @@ body::-webkit-scrollbar {
     border: 1px solid #7f45b4;
   }
   
-  .header{
+  .timer-header{
     margin: 5px;
     font-size: 15px;
     text-align: center;
+    color: white;
   }
   
   h1{
