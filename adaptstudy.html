@@ -11,9 +11,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="https://cdn.pixabay.com/photo/2014/08/23/10/54/mountain-425134_640.jpg">
         <script type="text/javascript" src="general.js" defer></script>
+        <script src="https://kit.fontawesome.com/742c5343ae.js" crossorigin="anonymous"></script>
+        
+       
 
     </head>
     <body>
+
+<div class="sidebar">
+    
+    
+    <a href="#" class="active" onclick="toggleVisibility()"><i class="fa-solid fa-note-sticky"></i></a>
+    <a href="#" onclick="toggleVisibility2()" ><i class="fa-solid fa-clock"></i></a>
+    <a href="#" onclick="toggleVisibility4()"><i class="fa-solid fa-play"></i></a>
+    <a href="#" onclick="toggleVisibility3()"><i class="fa-solid fa-bars"></i></a>
+</div>
+        
+        
+        
         <div class="overlay"></div>
         <div class="study-container">
             <div class="container-left">
@@ -23,11 +38,80 @@
                     </a>
                 </div> 
             </div>
+          
 
             <div class="container-3">
-                
+                <!--
+                <div class="timer-container">
+                    <div class="timer-visual">
+                        <span id="countdown-h">60</span><span>h</span>
+                        <span id="countdown-m">60</span><span>m</span>
+                        <span id="countdown-s">60</span><span>s</span>
+                    </div>
+                    <div class="timer-buttons">
+                        <div class="block">
+                            <button id="start-button" name="start-button" class="fill" onclick="startTimer()">START</button><br><br>
+            
+                        </div>
+                        <div class="block">
+                            <button id="end-button" name="end-button" class="fill" onclick="endTimer()">END</button><br><br>
+                        </div>
+                    </div>
+                </div> -->
+               
 
-                <div class="timer">
+                  <!-- Page content -->
+
+                 
+
+
+<!-- ----------------------TO DO LIST----------------------------- -->
+                <div id="mydiv">
+        
+                    <div class="todo-container">
+                        <div id="mydivheader">+</div>
+                        
+                        <!-- todo list header -->
+                        <div id="header">
+                          <h3>To Do List</h3>
+                        </div>
+                        
+                        <!-- create input box -->
+                        <div id="todo-form">
+                          <input
+                            type="text"
+                            class="input-item"
+                            name="input_box"
+                            id="input-box"
+                            placeholder="Add Task"
+                          />
+                  
+                          <!-- add button  -->
+                          <button id="input-button" onclick="addTask()">Add</button>
+                        </div>
+                  
+                        <!-- task list -->
+                        <h4>Task List</h4>
+                        <ul id="list-container"></ul>
+                  
+                        <hr>
+                  
+                        <!-- task list counter  -->
+                        <div class="counter-container">
+                          <div id="task-counters">
+                            Completed: <span id="completed-counter">0</span> | Uncompleted:
+                            <span id="uncompleted-counter">0</span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+
+                 <!-- -------------------tIMER------------ -->
+                <div id = "time" class="timer">
+
+                    <div id="header">
+                        <h3>Timer</h3>
+                      </div>
                     <div id="time-display">00:00:00</div>
                     <div class="timer-panel">
                         <div class="timer-inputs">
@@ -43,17 +127,18 @@
                     </div>
                 </div>
             </div>
+            
 
 
-            <div class="container-right">
+            <div id = "conright">
 
                 
 
 
                 <div class="quick-title">
-                    <div class="quick-title-padding">
+                    <!-- <div class="quick-title-padding">
                         Quick Resources
-                    </div>
+                    </div> -->
                 </div>
                 <div class="quick-links">
                     <div class="quick-item">
@@ -84,6 +169,26 @@
                 </div>
             </div>
         </div>
+
+    
+<!-- -------------Background image----------- -->
+          <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="Vid.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+
+        <!-- <div id="lofi"> -->
+            <!-- Replace the src URL with your livestream's embed URL -->
+            <!-- <iframe width="300" height="200" src="https://www.youtube.com/embed/Q89Dzox4jAE"> </iframe>
+        </div> -->
+        <div id="lofi">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" width="120%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+          
+          
+          
         
         
 

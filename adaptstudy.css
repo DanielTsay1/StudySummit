@@ -6,6 +6,25 @@ body {
     margin: 0 0;
     font-family: Poppins;
     font-size: 1.25rem;
+    
+    
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 body::-webkit-scrollbar {
@@ -46,12 +65,14 @@ body::-webkit-scrollbar {
     height: 100%;
     justify-content: center;
 }
-.container-right {
+#conright {
     display: flex;
     flex-direction: column;
     width: 25%;
     height: 100%;
-    justify-content: end;
+    position: fixed;
+    right: -15%;
+    
 }
 
 
@@ -69,15 +90,15 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-.quick-title {
+/* .quick-title {
     display: flex;
     flex-direction: row;
     height: 10%;
-    width: 80%;
+    width: 50%;
     align-self: flex-end;
     font-size: 20px;
     background-color:#4d4567; /*link list background color */
-}
+/* } */ 
 
 .quick-title-padding {
     padding: 20px;
@@ -86,10 +107,9 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     background-color:#4d4567; /*link list background color */
-    height: 100%;
-    width: 80%;
-    justify-content: space-evenly;
-    align-self: flex-end;
+    width: 50%;
+    
+    
 }
 .quick-item {
     display: flex;
@@ -122,18 +142,7 @@ body::-webkit-scrollbar {
 
 .timer {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    background-color: #4d4567;
-    padding: 1rem;
-}
-
-.timer-panel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 #time-display {
@@ -165,5 +174,176 @@ body::-webkit-scrollbar {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
-    width: 30%;
 }
+
+/* -------to do list-------- */
+#mydiv{
+  position: absolute;
+  background: #4d4567;
+  border: 2px solid #7f45b4;
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  right: 50%;
+  
+}
+  
+  #input-box{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    /* display: flex; */
+    
+  }
+   
+  #input-button{
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #171028;
+    color: white;
+    align-items: flex-end;
+  }
+  
+  .task button{
+    background: rgb(12, 124, 251);
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    float: right;
+    display: flex;
+  }
+  
+  hr{
+    border: 1px solid #7f45b4;
+  }
+  
+  .header{
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  h1{
+    margin-bottom: 20px; 
+  }
+  
+  #input-button:hover {
+    background-color: #9eb7fd; 
+  } 
+  
+  ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align:left;
+    font-size: 15px;
+  }
+  
+  li {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .edit-btn, .delete-btn, .complete-btn{
+    float: right;
+    color:rgb(214, 65, 65);
+    cursor: pointer;
+    margin: 3px 5px;
+    border: none;
+    padding: 3px 5px;
+    background: none;  
+    font-size: 15px;
+  } 
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+  }
+  .counter-container{
+    font-size: 15px;
+  }
+
+  /* -------side nav bar-------- */
+
+
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind other content */
+}
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+}
+.content {
+    position: relative;
+    z-index: 1; /* Place content above the video */
+    text-align: center;
+    padding: 50px;
+}
+
+
+.sidebar {
+  background-color: #333;
+  width: 50px; /* Adjust width as needed */
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.sidebar a {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+
+.content {
+  margin-left: 50px; /* Adjust according to sidebar width */
+  padding: 10px;
+  flex: 1;
+}
+
+#lofi{
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+
+}
+
