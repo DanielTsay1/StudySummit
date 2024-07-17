@@ -275,3 +275,48 @@ function toggleVisibility4() {
   }
 }
 
+const draggable = document.getElementById('time');
+
+let offsetX, offsetY, isDragging = false;
+
+draggable.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    offsetX = e.clientX - draggable.getBoundingClientRect().left;
+    offsetY = e.clientY - draggable.getBoundingClientRect().top;
+    draggable.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        draggable.style.left = `${e.clientX - offsetX}px`;
+        draggable.style.top = `${e.clientY - offsetY}px`;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    draggable.style.cursor = 'move';
+});
+
+const draggabl1e = document.getElementById('lofi');
+
+let offsetX1, offsetY1, isDragging1 = false;
+
+draggable.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    offsetX = e.clientX - draggable.getBoundingClientRect().left;
+    offsetY = e.clientY - draggable.getBoundingClientRect().top;
+    draggable.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        draggable.style.left = `${e.clientX - offsetX}px`;
+        draggable.style.top = `${e.clientY - offsetY}px`;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    draggable.style.cursor = 'move';
+});
