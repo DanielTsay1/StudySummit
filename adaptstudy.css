@@ -72,6 +72,8 @@ body::-webkit-scrollbar {
     height: 100%;
     position: fixed;
     right: -15%;
+    color: black;
+    border-radius: 10%;
     
 }
 
@@ -84,6 +86,7 @@ body::-webkit-scrollbar {
     height: fit-content;
     padding: 20px;
     font-size: 35px;
+    position: fixed;
 }
 
 .bold {
@@ -364,5 +367,8 @@ body::-webkit-scrollbar {
   top: 40%;
   left: 3%;
 
+}
+#lofi{
+  position: fixed;
 }
 
