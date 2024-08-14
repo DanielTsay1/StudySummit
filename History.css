@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    background-color: #4d4567;
+    background-color: #4d4567; /*navbar background color*/
     justify-content: space-between;
     align-content: center;
     padding: 1rem 1rem;
@@ -89,24 +89,21 @@ body::-webkit-scrollbar {
 .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 85%;
     align-items: center;
-    
-    
-
 }
 
 .nav-item{
     padding: 5px  15px;
     transition: .5s ease;
-    
+    border-radius: 15px;
 
 }
 
 /* -------------hover affect for nav bar-------------- */
 .nav-item:hover{
-    background-color:#8c80AA;
+    background-color: #8c80AA; /*hover color for navbar*/
     border-radius: 15px;
     transition-duration: all 0.7s ease-in-out; 
 }
@@ -340,16 +337,17 @@ form .btn2{
     padding: 5px  15px;
     transition: .5s ease;
     display: flex;
-    
+    border-radius: 15px;
+
 
     
   }
   
   /* Add a red background color to navbar links on hover */
-  .nav-bar a:hover, .dropdown:hover .dropbtn {
+  .nav-list a:hover, .dropdown:hover .dropbtn {
     
     background-color: #8c80AA;
-    
+    border-radius: 15px;
     transition-duration: all 0.7s ease-in-out; 
   }
   
@@ -361,6 +359,7 @@ form .btn2{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 15px 15px 0 0;
   }
   
   /* Links inside the dropdown */
@@ -376,8 +375,8 @@ form .btn2{
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
-
-    transition: .5s ease;
+    transition: .1s ease;
+    border-radius: 15px 15px 0 0;
     
   }
   
