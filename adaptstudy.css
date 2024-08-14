@@ -379,12 +379,11 @@ body::-webkit-scrollbar {
 
 #lofi{
   display: flex;
-  position: absolute;
-  top: 40%;
-  left: 3%;
-
-}
-#lofi{
   position: fixed;
+  bottom: 40%;
+  right: 45%;
+  height: 20px;
+  
 }
+
 
