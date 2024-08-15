@@ -86,7 +86,12 @@ body::-webkit-scrollbar {
     margin: 0 3%;
     align-self: center;
 }
-
+.nav-home img{
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: text-bottom;
+}
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -125,7 +130,7 @@ body::-webkit-scrollbar {
 }
 
 .hero-header {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 

@@ -50,7 +50,12 @@ body::-webkit-scrollbar {
     width: 15%;
     margin: 0 3%;
 }
-
+.nav-home img{
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: text-bottom;
+}
 .nav-list {
     position: absolute;
     display: flex;

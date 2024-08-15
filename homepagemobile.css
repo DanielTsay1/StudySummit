@@ -83,6 +83,7 @@ body::-webkit-scrollbar {
 .nav-home {
     width: 15%;
     margin: 0 3%;
+    align-content: center;
 }
 
 .nav-list {

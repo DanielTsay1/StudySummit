@@ -3,13 +3,13 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Study Summit</title>
+        <title>Adapt</title>
         <link rel = "stylesheet" href="adaptstudy.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" href="https://cdn.pixabay.com/photo/2014/08/23/10/54/mountain-425134_640.jpg">
+        <link rel="icon" href="Logo1.png">
         <script type="text/javascript" src="general.js" defer></script>
         <script src="https://kit.fontawesome.com/742c5343ae.js" crossorigin="anonymous"></script>
         
@@ -23,7 +23,7 @@
     
     <a href="#" class="active" onclick="toggleVisibility()"><i class="fa-solid fa-note-sticky"></i></a>
     <a href="#" onclick="toggleVisibility2()" ><i class="fa-solid fa-clock"></i></a>
-    <a href="#" onclick="toggleVisibility4()"><i class="fa-solid fa-play"></i></a>
+    <a href="#" onclick="toggleVisibility4()"><i class="fa-solid fa-music"></i>
     <a href="#" onclick="toggleVisibility3()"><i class="fa-solid fa-bars"></i></a>
 </div>
         
@@ -34,7 +34,7 @@
             <div class="container-left">
                 <div class="logo">
                     <a id="link" class="bold" href="homepage.html">
-                        Study Summit
+                        Adapt
                     </a>
                 </div> 
             </div>
@@ -164,14 +164,37 @@
             <!-- Replace the src URL with your livestream's embed URL -->
             <!-- <iframe width="300" height="200" src="https://www.youtube.com/embed/Q89Dzox4jAE"> </iframe>
         </div> -->
-        <div id="lofi">
-            <iframe width="300" height="200" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="lofi-container">
+            <div id="lofi">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" width="120%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+            </div>
         </div>
-          
-          
-          
-        
+<!-- <----------calculator------------>  
+<div class="calculator">
+    <div class="calculator__display">0</div>
+
+    <div class="calculator__keys">
+      <button class="key--operator" data-action="add">+</button>
+      <button class="key--operator" data-action="subtract">-</button>
+      <button class="key--operator" data-action="multiply">&times;</button>
+      <button class="key--operator" data-action="divide">÷</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>0</button>
+      <button data-action="decimal">.</button>
+      <button data-action="clear">AC</button>
+      <button class="key--equal" data-action="calculate">=</button>
+    </div>
+  </div>
+</div>
         
 
         
