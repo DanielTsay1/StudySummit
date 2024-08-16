@@ -241,6 +241,10 @@ function dragElement(elmnt) {
 }
 
 
+dragElement(document.getElementById("calc1"));
+
+
+
 // --------hidden function of nav bar--------
 function toggleVisibility() {
   var box = document.getElementById("mydiv");
@@ -274,7 +278,22 @@ function toggleVisibility4() {
     box.style.display = "none";
   }
 }
-
+function toggleVisibility4() {
+  var box = document.getElementById("lofi-container");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+function toggleVisibility5() {
+  var box = document.getElementById("calc1");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
 const draggable = document.getElementById('time');
 
 let offsetX, offsetY, isDragging = false;
@@ -364,131 +383,147 @@ document.addEventListener('mouseup', function() {
 
 
 
-const calculate = (n1, operator, n2) => {
-  const firstNum = parseFloat(n1)
-  const secondNum = parseFloat(n2)
-  if (operator === 'add') return firstNum + secondNum
-  if (operator === 'subtract') return firstNum - secondNum
-  if (operator === 'multiply') return firstNum * secondNum
-  if (operator === 'divide') return firstNum / secondNum
+class Calculator {
+	
+	constructor() {
+		this.current = 0;
+		this.entered = 0;
+		this.answer = 0;
+
+		this.decimal = false;
+
+		this.operator = '';
+
+		this.states = {
+			'inv': false,
+			'comma': false
+		}
+
+		this.options = [
+			['equals', this.processEquals.bind(this)],
+			['clear', this.processClear.bind(this)],
+			['sqrt', this.processSqrt.bind(this)],
+			['inv', this.processInv.bind(this)],
+			['comma', this.processComma.bind(this)],
+			['pi', this.processPi.bind(this)]
+		];
+
+		this.firstEnteredOutput = document.querySelector('.f_entered');
+		this.lastEnteredOutput = document.querySelector('.l_entered');
+		this.operatorOutput = document.querySelector('.operator');
+
+		this.currentOutput = document.querySelector('.current > h1');
+		this.buttons = document.querySelectorAll('.buttons > div');
+
+		for(var i = 0, n = this.buttons.length; i < n; i++) {
+			var calc = this;
+			var button = this.buttons[i];
+
+			button.addEventListener('mousedown', function() {
+				var _this = this;
+				calc.processAction(_this.getAttribute('data-key'));
+				_this.classList.add('pressed');
+				setTimeout(function() {
+					_this.classList.remove('pressed');
+				}, 400);
+			});
+
+			button.addEventListener('mouseup', function() {
+				var _this = this;
+				_this.classList.remove('pressed');
+			});
+		}
+	}
+
+	processAction(a) {
+		for(var i = 0, n = this.options.length; i < n; i++) {
+			var option = this.options[i];
+			if(a === option[0]) {
+				option[1]();
+				return;
+			}
+		}
+
+		if(a === '+' || a === '-' || a === '/' || a === '*') {
+			this.processASDM(a);
+			return;
+		} else {
+			this.processNumber(a);
+			return;
+		}
+
+	}
+
+	processEquals() {
+		if(!!this.operator) {
+			this.displayNumber(this.current, this.lastEnteredOutput);
+			this.answer = eval(this.entered + this.operator + this.current);
+			this.displayNumber(this.answer, this.currentOutput);
+
+			this.current = this.answer;
+		}
+	}
+
+	processClear() {
+		this.current = 0;
+		this.displayNumber(this.current, this.currentOutput);
+		this.entered = 0;
+		this.operator = '';
+		this.firstEnteredOutput.innerHTML = '';
+		this.lastEnteredOutput.innerHTML = '';
+		this.operatorOutput.innerHTML = '';
+	}
+
+	processSqrt() {
+		this.current = Math.sqrt(this.current);
+		this.displayNumber(this.current, this.currentOutput);
+	}
+
+	processInv() {
+		this.current = this.current * -1;
+		this.displayNumber(this.current, this.currentOutput);
+	}
+
+	processComma() {
+		if(!this.decimal) {
+			this.current += '.';
+			this.currentOutput.innerHTML = this.current;
+		}
+
+		this.decimal = true;
+	}
+
+	processPi() {
+		this.current = Math.PI;
+		this.displayNumber(this.current, this.currentOutput);
+	}
+
+	processASDM(a) {
+		if(!!this.entered && !!!this.answer) {
+			return;
+		}
+
+		if(this.answer) {
+			this.lastEnteredOutput.innerHTML = '';
+		}
+
+		this.decimal = false;
+		this.operator = a;
+		this.entered = this.current;
+		this.displayNumber(this.entered, this.firstEnteredOutput);
+		a === '*' ? this.operatorOutput.innerHTML = 'x' : this.operatorOutput.innerHTML = this.operator;
+		this.current = 0;
+		this.displayNumber(this.current, this.currentOutput);
+	}
+
+	processNumber(n) {
+		this.current === 0 ? this.current = n : this.current += n;
+		this.displayNumber(this.current, this.currentOutput);
+	}
+
+	displayNumber(n, location) {
+		location.innerHTML = String(n).substring(0, 10);
+	}
 }
 
-const getKeyType = key => {
-  const { action } = key.dataset
-  if (!action) return 'number'
-  if (
-    action === 'add' ||
-    action === 'subtract' ||
-    action === 'multiply' ||
-    action === 'divide'
-  ) return 'operator'
-  // For everything else, return the action
-  return action
-}
-
-const createResultString = (key, displayedNum, state) => {
-  const keyContent = key.textContent
-  const keyType = getKeyType(key)
-  const {
-    firstValue,
-    operator,
-    modValue,
-    previousKeyType
-  } = state
-
-  if (keyType === 'number') {
-    return displayedNum === '0' ||
-      previousKeyType === 'operator' ||
-      previousKeyType === 'calculate'
-      ? keyContent
-      : displayedNum + keyContent
-  }
-
-  if (keyType === 'decimal') {
-    if (!displayedNum.includes('.')) return displayedNum + '.'
-    if (previousKeyType === 'operator' || previousKeyType === 'calculate') return '0.'
-    return displayedNum
-  }
-
-  if (keyType === 'operator') {
-    return firstValue &&
-      operator &&
-      previousKeyType !== 'operator' &&
-      previousKeyType !== 'calculate'
-      ? calculate(firstValue, operator, displayedNum)
-      : displayedNum
-  }
-
-  if (keyType === 'clear') return 0
-
-  if (keyType === 'calculate') {
-    return firstValue
-      ? previousKeyType === 'calculate'
-        ? calculate(displayedNum, operator, modValue)
-        : calculate(firstValue, operator, displayedNum)
-      : displayedNum
-  }
-}
-
-const updateCalculatorState = (key, calculator, calculatedValue, displayedNum) => {
-  const keyType = getKeyType(key)
-  const {
-    firstValue,
-    operator,
-    modValue,
-    previousKeyType
-  } = calculator.dataset
-
-  calculator.dataset.previousKeyType = keyType
-
-  if (keyType === 'operator') {
-    calculator.dataset.operator = key.dataset.action
-    calculator.dataset.firstValue = firstValue &&
-      operator &&
-      previousKeyType !== 'operator' &&
-      previousKeyType !== 'calculate'
-      ? calculatedValue
-      : displayedNum
-  }
-
-  if (keyType === 'calculate') {
-    calculator.dataset.modValue = firstValue && previousKeyType === 'calculate'
-      ? modValue
-      : displayedNum
-  }
-
-  if (keyType === 'clear' && key.textContent === 'AC') {
-    calculator.dataset.firstValue = ''
-    calculator.dataset.modValue = ''
-    calculator.dataset.operator = ''
-    calculator.dataset.previousKeyType = ''
-  }
-}
-
-const updateVisualState = (key, calculator) => {
-  const keyType = getKeyType(key)
-  Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
-
-  if (keyType === 'operator') key.classList.add('is-depressed')
-  if (keyType === 'clear' && key.textContent !== 'AC') key.textContent = 'AC'
-  if (keyType !== 'clear') {
-    const clearButton = calculator.querySelector('[data-action=clear]')
-    clearButton.textContent = 'CE'
-  }
-}
-
-const calculator = document.querySelector('.calculator')
-const display = calculator.querySelector('.calculator__display')
-const keys = calculator.querySelector('.calculator__keys')
-
-keys.addEventListener('click', e => {
-  if (!e.target.matches('button')) return
-  const key = e.target
-  const displayedNum = display.textContent
-  const resultString = createResultString(key, displayedNum, calculator.dataset)
-
-  display.textContent = resultString
-  updateCalculatorState(key, calculator, resultString, displayedNum)
-  updateVisualState(key, calculator)
-})
-
+var Calc = new Calculator();
