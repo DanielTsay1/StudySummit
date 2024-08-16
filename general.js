@@ -271,7 +271,7 @@ function toggleVisibility3() {
   }
 }
 function toggleVisibility4() {
-  var box = document.getElementById("lofi");
+  var box = document.getElementById("video");
   if (box.style.display === "none") {
     box.style.display = "block";
   } else {
@@ -279,7 +279,7 @@ function toggleVisibility4() {
   }
 }
 function toggleVisibility4() {
-  var box = document.getElementById("lofi-container");
+  var box = document.getElementById("video-container");
   if (box.style.display === "none") {
     box.style.display = "block";
   } else {
@@ -317,7 +317,7 @@ document.addEventListener('mouseup', () => {
     draggable.style.cursor = 'move';
 });
 
-const draggabl1e = document.getElementById('lofi');
+const draggabl1e = document.getElementById('video');
 
 let offsetX1, offsetY1, isDragging1 = false;
 
@@ -354,7 +354,7 @@ document.addEventListener('mouseup', () => {
 
 
 
-const draggableElement = document.getElementById('lofi-container');
+const draggableElement = document.getElementById('video-container');
 let ytDragging = false;
 let ytX, ytY;
 
@@ -527,3 +527,57 @@ class Calculator {
 }
 
 var Calc = new Calculator();
+
+
+let genreText = document.getElementById('genre-name');
+
+function switchGenre() {
+  if(genreText.innerText === "Current Genre: Lofi")
+  {
+    genreText.innerText = "Current Genre: EDM";
+    document.getElementById('lofi-iframe').style.display = "none";
+    document.getElementById('EDM-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: EDM")
+  {
+    genreText.innerText = "Current Genre: Pop";
+    document.getElementById('EDM-iframe').style.display = "none";
+    document.getElementById('pop-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: Pop")
+  {
+    genreText.innerText = "Current Genre: RnB & chill";
+    document.getElementById('pop-iframe').style.display = "none";
+    document.getElementById('rnb-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: RnB & chill")
+  {
+    genreText.innerText = "Current Genre: Jazz";
+    document.getElementById('rnb-iframe').style.display = "none";
+    document.getElementById('jazz-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: Jazz")
+  {
+    genreText.innerText = "Current Genre: Classical Piano";
+    document.getElementById('jazz-iframe').style.display = "none";
+    document.getElementById('piano-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: Classical Piano")
+  {
+    genreText.innerText = "Current Genre: K-pop";
+    document.getElementById('piano-iframe').style.display = "none";
+    document.getElementById('kpop-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: K-pop")
+  {
+    genreText.innerText = "Current Genre: K-pop Girl Groups";
+    document.getElementById('kpop-iframe').style.display = "none";
+    document.getElementById('kgirl-iframe').style.display = "block";
+  }
+  else if (genreText.innerText === "Current Genre: K-pop Girl Groups")
+  {
+    genreText.innerText = "Current Genre: Lofi";
+    document.getElementById('kgirl-iframe').style.display = "none";
+    document.getElementById('lofi-iframe').style.display = "block";
+  }
+}

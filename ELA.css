@@ -81,15 +81,21 @@ body::-webkit-scrollbar {
 }
 
 .nav-home {
+    display: flex;
     width: 15%;
     margin: 0 3%;
-    align-self: center;
 }
-.nav-home img{
+
+.nav-home-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav-home-group img{
     width: 40px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px; /* Space between logo and text */
-    vertical-align: text-bottom;
 }
 .nav-list {
     display: flex;

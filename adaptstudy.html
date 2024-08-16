@@ -154,7 +154,7 @@
 
     
 <!-- -------------Background image----------- -->
-          <div class="video-container">
+        <div class="video-container">
             <video autoplay muted loop id="video-background">
                 <source src="Vid.mp4" type="video/mp4">
                
@@ -165,10 +165,21 @@
             <!-- Replace the src URL with your livestream's embed URL -->
             <!-- <iframe width="300" height="200" src="https://www.youtube.com/embed/Q89Dzox4jAE"> </iframe>
         </div> -->
-        <div id="lofi-container">
-            <div id="lofi">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="video-container">
+            <div class="video-genre">
+                <button onclick="switchGenre()" id="next-genre">Next Genre</button>
+                <span id="genre-name">Current Genre: Lofi</span>
+            </div>
+            <div id="video">
+                <iframe id="lofi-iframe"  src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator" width="120%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+                <iframe id="EDM-iframe" src="https://www.youtube.com/embed/7tNtU5XFwrU" title="NCS 24/7 - Copyright Free Music Livestream 🎵 @NoCopyrightSounds EDM, Gaming, Trap, House, Dubstep" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="pop-iframe" src="https://www.youtube.com/embed/HZmdY3TOtS0" title="Pop Mix Radio • 24/7 Live | Pop Music Hits of 2024, The Best Pop Songs with Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="rnb-iframe" src="https://www.youtube.com/embed/86XzuPmMriw" title="rnb + chill radio [ dark rnb / trap soul / alternative hip hop / pop stream ] 24/7 live playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="jazz-iframe" src="https://www.youtube.com/embed/Dx5qFachd3A" title="Relaxing Jazz Piano Radio - Slow Jazz Music - 24/7 Live Stream - Music For Work + Study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="piano-iframe" src="https://www.youtube.com/embed/6WF8TolyWrk" title="Classical Piano (No Mid-Roll Ads) | 24/7 Classical Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="kpop-iframe" src="https://www.youtube.com/embed/JVocS7Yftw8" title="🔴THE K-POP :  24/7 𝗟𝗜𝗩𝗘 (K-POP 24시간 실시간 스트리밍 채널)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="kgirl-iframe" src="https://www.youtube.com/embed/G3NX_hzCuFM" title="[𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕] 24/7 ✨4세대 걸그룹✨ 플레이리스트 | K-POP Girl Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 <!-- <----------calculator------------>  

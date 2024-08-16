@@ -191,7 +191,9 @@ body::-webkit-scrollbar {
     font-size: 16px;
     width: 30%;
     font-family: Poppins;
-
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(23, 0, 44);
 }
 
 .timer-controls {
@@ -209,8 +211,16 @@ body::-webkit-scrollbar {
   font-size: 16px;
   width: 32%;
   text-wrap: wrap;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #7f45b4;
+
   font-family: Poppins;
 
+}
+
+.timer-controls button:hover {
+  background-color: #8c80AA;
 }
 
 /* -------to do list-------- */
@@ -381,13 +391,14 @@ body::-webkit-scrollbar {
   flex: 1;
 }
 
-#lofi-container{
+#video-container{
   display: flex;
+  flex-direction: column;
   position: absolute;
-  right: 50%;
-  bottom: 55%;
-  width: 320px;
-  height: 300px;
+  right: 5%;
+  bottom: 5%;
+  width: 375px;
+  height: 320px;
   align-content: center;
   justify-content: center;
   border: 2px solid #7f45b4;
@@ -397,8 +408,35 @@ body::-webkit-scrollbar {
 
 }
 
+.video-genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
 
-#lofi{
+#next-genre {
+  color: white;
+  padding: 10px;
+  border: 2px solid #7f45b4;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#next-genre:hover {
+  background-color: #8c80AA;
+}
+
+#genre-name {
+  color: white;
+  font-size: 15px;
+
+}
+
+#video{
   background-color: #4d4567;
   width: 300px;
   height: 200px;
@@ -408,6 +446,54 @@ body::-webkit-scrollbar {
   border: 10px solid black;
   border-radius: 10px;
   
+}
+
+#lofi-iframe {
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+#EDM-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#pop-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#rnb-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#jazz-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#piano-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#kpop-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
+}
+
+#kgirl-iframe {
+  display: none;
+  width: 300px;
+  height: 200px;
 }
 
 embed,
@@ -538,8 +624,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 15%;
-  bottom: 50%;
+  right: 80%;
+  bottom: 10%;
   font-size: 14px;
 }
 .calc .nav {
