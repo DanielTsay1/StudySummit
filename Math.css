@@ -165,6 +165,17 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
+.svg-divider-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.svg-divider {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
 .study-text {
     width: 70%;
 }

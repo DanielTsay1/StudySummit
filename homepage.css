@@ -171,7 +171,8 @@ body::-webkit-scrollbar {
 }
 
 .study-text {
-    width: 60%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .study-button {
