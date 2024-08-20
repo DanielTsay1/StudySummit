@@ -294,6 +294,9 @@ function toggleVisibility5() {
     box.style.display = "none";
   }
 }
+
+//code for toggle visibility for the side menu bars and all content in adaptstudy
+
 const draggable = document.getElementById('time');
 
 let offsetX, offsetY, isDragging = false;
@@ -340,7 +343,7 @@ document.addEventListener('mouseup', () => {
     draggable.style.cursor = 'move';
 });
 
-
+//IDK what this stuff is for  ^^
 
 
 
@@ -380,7 +383,7 @@ document.addEventListener('mouseup', function() {
     ytDragging = false;
 });
 
-
+//yt dragging code for adphystudy^^
 
 
 class Calculator {
@@ -527,6 +530,8 @@ class Calculator {
 }
 
 var Calc = new Calculator();
+//calculator code ^^
+
 
 
 let genreText = document.getElementById('genre-name');
@@ -579,5 +584,41 @@ function switchGenre() {
     genreText.innerText = "Current Genre: Lofi";
     document.getElementById('kgirl-iframe').style.display = "none";
     document.getElementById('lofi-iframe').style.display = "block";
+  }
+}
+
+//code for swtiching YT vid in adapt study
+
+
+function hsMathShow(letter) {
+  document.getElementById('hs-math-alg1').style.display = 'none';
+  document.getElementById('hs-math-geo').style.display = 'none';
+  document.getElementById('hs-math-alg2').style.display = 'none';
+  document.getElementById('hs-math-trig').style.display = 'none';
+  document.getElementById('hs-math-precalc').style.display = 'none';
+  if(letter === 'a')
+  {
+    document.getElementById('hs-math-alg1').style.display = 'flex';
+    document.getElementById('hs-math-alg1').style.backgroundColor = '#403563';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('hs-math-geo').style.display = 'flex';
+    document.getElementById('hs-math-geo').style.backgroundColor = '#403563';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('hs-math-alg2').style.display = 'flex';
+    document.getElementById('hs-math-alg2').style.backgroundColor = '#403563';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('hs-math-trig').style.display = 'flex';
+    document.getElementById('hs-math-trig').style.backgroundColor = '#403563';
+  }
+  else if (letter === 'e')
+  {
+    document.getElementById('hs-math-precalc').style.display = 'flex';
+    document.getElementById('hs-math-precalc').style.backgroundColor = '#403563';
   }
 }
