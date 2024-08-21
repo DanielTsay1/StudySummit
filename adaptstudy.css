@@ -32,19 +32,22 @@ video {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+  background-color: #4d4567;
+  border-radius: 10px;
+  
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  color: white;
 }
 
-button:hover {
-  background-color: rgba(255, 255, 255, 1);
+.controls button:hover {
+  background-color: #8c80AA;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -590,7 +593,7 @@ input,
 textarea,
 button {
   border: 0;
-  border-radius: 0;
+  border-radius: 10px;
   background-color: transparent;
   font-size: inherit;
   font-family: inherit;

@@ -295,7 +295,14 @@ function toggleVisibility5() {
     box.style.display = "none";
   }
 }
-
+function toggleVisibility6() {
+  var box = document.getElementById("bgvid");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
 //code for toggle visibility for the side menu bars and all content in adaptstudy
 
 const draggable = document.getElementById('time');
