@@ -47,13 +47,15 @@
                     </button>
                     <div class="dropdown-content">
                       <a href="#Alg1">Algebra 1</a>
-                      <a href="#GEO">Geometry</a>
+                      <a href="#Geo">Geometry</a>
                       <a href="#Alg2">Algebra 2</a>
-                      <a href="#PreCalc"> AP Pre Calc</a>
-                      <a href="#calcab">AP Calc AB</a>
-                      <a href="#calcbc">AP Calc BC</a>
-                      <a href="#multivar">Multi-Variable Calculus</a>
+                      <a href="#Trig">Trigonometry</a>
+                      <a href="#Precalc">Pre-Calculus</a>
+                      <a href="#APPrecalc">AP Pre-Calculus</a>
+                      <a href="#CalcAB">AP Calc AB</a>
+                      <a href="#CalcBC">AP Calc BC</a>
                       <a href="#Stats">AP Statistics</a>
+                      <a href="#Multivar">Multi-Variable Calculus</a>
                       
 
                     </div>
@@ -166,13 +168,20 @@
         </svg>
     </div>
 
-    <div id="stop-point""></div>
 
+    
+    <div id="stop-point"></div>
+
+    <div id=Alg1></div>
+    <div id=Geo></div>
+    <div id=Alg2></div>
+    <div id=Trigonometry></div>
+    <div id=Precalc></div>
     <div class="alt-container">
         <div class="high-school-math-title">High School Math</div>
         <div class="high-school-math">
             <div class="hs-math-level">
-                <button onclick="hsMathShow('a')" class="hs-math-level-title">Algbera 1</button>
+                <button onclick="hsMathShow('a')" class="hs-math-level-title">Algbera 1 ✖️</button>
                 <div id="hs-math-alg1" class="hs-math-content">
                     <ul class="resource-list">
                         <li>
@@ -194,7 +203,7 @@
                 </div>
             </div>
             <div class="hs-math-level">
-                <button onclick="hsMathShow('b')" class="hs-math-level-title">Geometry</button>
+                <button onclick="hsMathShow('b')" class="hs-math-level-title">Geometry 📐</button>
                 <div id="hs-math-geo" class="hs-math-content">
                     <ul class="resource-list">
                         <li>
@@ -221,7 +230,7 @@
                 </div>
             </div>
             <div class="hs-math-level">
-                <button onclick="hsMathShow('c')" class="hs-math-level-title">Algbera 2</button>
+                <button onclick="hsMathShow('c')" class="hs-math-level-title">Algbera 2 ➗</button>
                 <div id="hs-math-alg2" class="hs-math-content">
                     <ul class="resource-list">
                         <li>
@@ -248,7 +257,7 @@
                 </div>
             </div>
             <div class="hs-math-level">
-                <button onclick="hsMathShow('d')" class="hs-math-level-title">Trigonometry</button>
+                <button onclick="hsMathShow('d')" class="hs-math-level-title">Trigonometry 🔺</button>
                 <div id="hs-math-trig" class="hs-math-content">
                     <ul class="resource-list">
                         <li>
@@ -270,7 +279,7 @@
                 </div>
             </div>
             <div class="hs-math-level">
-                <button onclick="hsMathShow('e')" class="hs-math-level-title">Pre-Calculus</button>
+                <button onclick="hsMathShow('e')" class="hs-math-level-title">Pre-Calculus 📈</button>
                 <div id="hs-math-precalc" class="hs-math-content">
                     <ul class="resource-list">
                         <li>
@@ -342,363 +351,193 @@
 
 
 
-
+    <div id=APPrecalc></div>
+    <div id=CalcAB></div>
+    <div id=CalcBC></div>
+    <div id=Stats></div>
+    <div id=Multivar></div>
     <div class="container">
         <div class="ap-math-title">AP Math</div>
         <div class="ap-math">
             <div class="ap-math-level">
-                <button onclick="apMathShow('a')" class="ap-math-level-title">AP Pre-Calculus</button>
+                <button onclick="apMathShow('a')" class="ap-math-level-title">AP Pre-Calculus 📉</button>
                 <div id="ap-math-precalc" class="ap-math-content">
-                    <p>ap precalc resources</p>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://library.fiveable.me/pre-calc">
+                                Fiveable - study guides and practice questions for AP Pre-calc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://myap.collegeboard.org/login">
+                                AP Classroom - ask your teacher to assign practices test/quizzes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.crackap.com/ap/precalculus/">
+                                Crack AP - PLENTY of practice tests here for AP Pre-calc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.khanacademy.org/math/precalculus">
+                                Khan Academy - course on NORMAL Pre-calc; good for practice though
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="ap-math-level">
-                <button onclick="apMathShow('b')" class="ap-math-level-title">AP Calculus AB</button>
+                <button onclick="apMathShow('b')" class="ap-math-level-title">AP Calculus AB ♾️</button>
                 <div id="ap-math-calcAB" class="ap-math-content">
-                    <p>ap calc AB resources</p>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.khanacademy.org/math/ap-calculus-ab">
+                                Khan Academy - full course complete with videos, articles and practice questions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.princetonreview.com/college-advice/ap-calculus-ab-exam">
+                                Princeton Review - great summary and overview of the Calc AB exam.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://library.fiveable.me/ap-calc">
+                                Fiveable - has guides and questions for AP Calc AB/BC. Great review resource!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.crackap.com/ap/calculus-ab/">
+                                Crack AP - PLENTY of practice tests here for AP Calc AB
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://myap.collegeboard.org/login">
+                                AP Classroom - ask your teacher to assign practices test/quizzes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tutorial.math.lamar.edu/classes/calci/calci.aspx">
+                                Paul's Online Notes - notes and review for Calc 1, almost completely overlaps AP Calc AB
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="ap-math-level">
-                <button onclick="apMathShow('c')" class="ap-math-level-title">AP Calculus BC</button>
+                <button onclick="apMathShow('c')" class="ap-math-level-title">AP Calculus BC ♾️</button>
                 <div id="ap-math-calcBC" class="ap-math-content">
-                    <p>ap calc BC resources</p>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.crackap.com/ap/calculus-bc">
+                                Crack AP - PLENTY of practice tests here for AP Calc BC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.khanacademy.org/math/ap-calculus-bc">
+                                Khan Academy - has great videos and practice questions to learn and review AP Calc BC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=natHnOGLzYc&list=PL00CCm_434gHmObik13oqAUq0foEGOdIw">
+                                RH Mathematics - full playlist of topics throughout AP Calc BC
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="https://myap.collegeboard.org/login">
+                                AP Classroom - ask your teacher to assign practices test/quizzes 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://library.fiveable.me/ap-calc">
+                                Fiveable - has study guides and practice questions for AP Calc AB/BC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tutorial.math.lamar.edu/classes/calcII/calcII.aspx">
+                                Paul's Online Notes - notes and review for Calc 2, contains most topics in AP Calc BC
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="ap-math-level">
-                <button onclick="apMathShow('d')" class="ap-math-level-title">AP Statistics</button>
+                <button onclick="apMathShow('d')" class="ap-math-level-title">AP Statistics 📊</button>
                 <div id="ap-math-stats" class="ap-math-content">
-                    <p>AP stats resources</p>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://library.fiveable.me/ap-stats">
+                                Fiveable - has guides and questions for AP Statistics
+                        </li>
+                        <li>
+                            <a href="https://www.khanacademy.org/math/ap-statistics">
+                                Khan Academy - full course complete with videos, articles and practice questions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://myap.collegeboard.org/login">
+                                AP Classroom - ask your teacher to assign practices test/quizzes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.crackap.com/ap/statistics">
+                                Crack AP - PLENTY of practice tests here for AP Statistics
+                            </a>
+                        </li>
+                       
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-
-<!-- ----------------alg1------------- -->
-    <div id = Alg1>
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="section-title">
-                    Algebra 1
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.mathplanet.com/education/algebra-1">
-                                    Math Planet - easy to follow guide through algebra 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/math/algebra">
-                                    Khan Academy - has great videos and questions to learn Algebra 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
-                                    The Organic Chemistry Tutor - a video that provides a well thourough and comprehensive review of algebra 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.ixl.com/math/algebra-1">
-                                    IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                
-                   
-                </div>
-            </div>
-        </div>
-        <div id = GEO>
-            <div class="container">
-                <div class="topic-section">
-                    <div class="alt-section-title">
-                        Geometry
-                    </div>
-                    <div class="resources">
-                        <div class="ap-resources">
-                            Resources
-                            <ul class="alt-resource-list">
-                                <li>
-                                    <a href="https://www.khanacademy.org/math/geometry">
-                                        Khan Academy - full on course with videos, articles and questions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.mathsisfun.com/geometry/">
-                                        Math is fun - great explanations and tutorials for Geomatry 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.mathplanet.com/education/algebra-2">
-                                        Math Plant - easy to follow and thourough lesson through algebra 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/watch?v=C6PzJZVuIIo">
-                                        Derek Banas - Really quick summary of algebra 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/watch?v=i6sbjtJjJ-A">
-                                        The Organic Chemistry Tutor - full on comprehensive and thourough explanation and summary of algebra 2. 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-             
-                        
-                
-
-                    </div>
-                </div>
-            </div>
-    <!--Math Section ^^-->
-    <div id = Alg2>
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    Algebra 2
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/math/algebra2">
-                                    Khan Academy - full on course with videos, articles and questions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.ixl.com/math/algebra-2">
-                                    IXL - lots of materials and articles to gain a better understanding
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mathplanet.com/education/algebra-2">
-                                    Math Plant - easy to follow and thourough lesson through algebra 2
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=C6PzJZVuIIo">
-                                    Derek Banas - Really quick summary of algebra 2
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=i6sbjtJjJ-A">
-                                    The Organic Chemistry Tutor - full on comprehensive and thourough explanation and summary of algebra 2. 
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                
-                </div>
-            </div>
-        </div>
-
         
 
-        <!--Science Section ^^-->
-    <div id = Precalc>
-        <div class="container">
-            <div class="topic-section">
-                <div class="section-title">
-                    Pre-Calc
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP and General Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://library.fiveable.me/pre-calc">
-                                    Fiveable - has guides and questions for AP pre calc. Great review resource!
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/precalculus/">
-                                    Crack AP - PLENTY of practice tests here for AP Pre calc
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/math/precalculus">
-                                    Khan Academy - full on course with videos, articles and questions. Great for practice!
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-            </div>
+        
         </div>
     </div>
-    <div id = calcab>
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    AP Calculus AB
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/math/ap-calculus-ab">
-                                    Khan academy - full on course with videos, articles and questions. Great for practice!
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.princetonreview.com/college-advice/ap-calculus-ab-exam">
-                                    Princeton Review - Great summary and expectation for the Calc AB exam.
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://library.fiveable.me/ap-calc">
-                                    Fiveable - has guides and questions for AP pre calc. Great review resource!
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/calculus-ab/">
-                                    Crack AP - PLENTY of practice tests here for AP Calc AB
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id = calcbc>
-            <div class="container">
-                <div class="topic-section">
-                    <div class="section-title">
-                        AP Calculus BC
-                    </div>
-                    <div class="resources">
-                        <div class="ap-resources">
-                            Resources
-                            <ul class="alt-resource-list">
-                                <li>
-                                    <a href="https://www.crackap.com/ap/calculus-bc">
-                                        Crack AP - PLENTY of practice tests here for AP Calc BC
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.khanacademy.org/math/ap-calculus-bc">
-                                        Khan Academy - has great videos and questions to learn and review AP Calc BC
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/watch?v=natHnOGLzYc&list=PL00CCm_434gHmObik13oqAUq0foEGOdIw">
-                                        Full youtube playlist through the Calc BC course
-                                    </a>
-                                </li>
-                               
-                                <li>
-                                    <a href="https://myap.collegeboard.org/login">
-                                        AP Classroom - ask your teacher to assign practices test/quizzes 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://library.fiveable.me/ap-calc">
-                                        Fiveable - has guides and questions for AP pre calc. Great review resource!
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id = multivar>
-                <div class="alt-container">
-                    <div class="topic-section">
-                        <div class="section-title">
-                            Multi Variable Calculus
-                        </div>
-                        <div class="resources">
-                            <div class="ap-resources">
-                                Resources
-                                <ul class="resource-list">
-                                    <li>
-                                        <a href=https://www.khanacademy.org/math/multivariable-calculus">
-                                            Khan Academy - has great videos and questions to learn and review 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://machinelearningmastery.com/a-gentle-introduction-to-multivariate-calculus/">
-                                            Machine learning mastery - Introdcution to multi variable calc
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.calc3.org/">
-                                            calc3 - great exams and background material
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.crackap.com/ap/statistics/index.htmll">
-                                            Crack AP - PLENTY of practice tests here for AP Statistics.
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id = Stats>
-                    <div class="container">
-                        <div class="topic-section">
-                            <div class="alt-section-title">
-                                AP Statistics
-                            </div>
-                            <div class="resources">
-                                <div class="ap-resources">
-                                    AP Resources
-                                    <ul class="alt-resource-list">
-                                        <li>
-                                            <a href="https://library.fiveable.me/ap-stats">
-                                                Fiveable - has guides and questions for AP stats
-                                        </li>
-                                        <li>
-                                            <a href="https://www.khanacademy.org/math/ap-statistics">
-                                                Khan Academy - has the whoel course for AP stats and plenty of practice questions
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://myap.collegeboard.org/login">
-                                                AP Classroom - ask your teacher to assign practices test/quizzes
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.crackap.com/ap/statistics">
-                                                Crack AP - PLENTY of practice tests here for AP Statistics.
-                                            </a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="svg-divider-container">
+        <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
+            <rect width="2262" height="206" fill="#171028"/>
+            <rect y="121" width="463" height="113" fill="#22193E"/>
+            <rect x="2218" width="1984" height="206" fill="#171028"/>
+            <rect y="171" width="2016" height="147" fill="#22193E"/>
+            <rect x="3740" y="206" width="462" height="112" fill="#22193E"/>
+            <rect x="1836" y="147" width="1984" height="171" fill="#22193E"/>
+            <ellipse cx="673.5" cy="121" rx="673.5" ry="72" fill="#171028"/>
+            <ellipse cx="1629.5" cy="229" rx="632.5" ry="89" fill="#22193E"/>
+            <ellipse cx="2547.5" cy="85.5" rx="964.5" ry="85.5" fill="#171028"/>
+            <ellipse cx="3576.5" cy="206" rx="625.5" ry="73" fill="#22193E"/>
+            <rect x="4202" y="524" width="2262" height="205" transform="rotate(180 4202 524)" fill="#30274D"/>
+            <rect x="4202" y="403" width="462" height="112" transform="rotate(180 4202 403)" fill="#22193E"/>
+            <rect x="1984" y="524" width="1984" height="205" transform="rotate(180 1984 524)" fill="#30274D"/>
+            <rect x="4202" y="353" width="2016" height="147" transform="rotate(180 4202 353)" fill="#22193E"/>
+            <rect x="463" y="319" width="463" height="113" transform="rotate(180 463 319)" fill="#22193E"/>
+            <rect x="2367" y="377" width="1984" height="171" transform="rotate(180 2367 377)" fill="#22193E"/>
+            <ellipse cx="3528.5" cy="403.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 403.5)" fill="#30274D"/>
+            <ellipse cx="2573" cy="295.5" rx="633" ry="89.5" transform="rotate(180 2573 295.5)" fill="#22193E"/>
+            <ellipse cx="1654.5" cy="438.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 438.5)" fill="#30274D"/>
+            <ellipse cx="625.5" cy="318.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 318.5)" fill="#22193E"/>
+            <rect y="403" width="2262" height="205" fill="#30274D"/>
+            <rect y="524" width="462" height="112" fill="#403563"/>
+            <rect x="2218" y="403" width="1984" height="205" fill="#30274D"/>
+            <rect y="574" width="2016" height="147" fill="#403563"/>
+            <rect x="3739" y="608" width="463" height="113" fill="#403563"/>
+            <rect x="1835" y="550" width="1984" height="171" fill="#403563"/>
+            <ellipse cx="673.5" cy="523.5" rx="673.5" ry="72.5" fill="#30274D"/>
+            <ellipse cx="1629" cy="631.5" rx="633" ry="89.5" fill="#403563"/>
+            <ellipse cx="2547.5" cy="488.5" rx="964.5" ry="85.5" fill="#30274D"/>
+            <ellipse cx="3576.5" cy="608.5" rx="625.5" ry="73.5" fill="#403563"/>
+            <rect x="4202" y="926" width="2262" height="205" transform="rotate(180 4202 926)" fill="#4D4567"/>
+            <rect x="4202" y="805" width="462" height="112" transform="rotate(180 4202 805)" fill="#403563"/>
+            <rect x="1984" y="926" width="1984" height="205" transform="rotate(180 1984 926)" fill="#4D4567"/>
+            <rect x="4202" y="755" width="2016" height="147" transform="rotate(180 4202 755)" fill="#403563"/>
+            <rect x="2367" y="779" width="1984" height="171" transform="rotate(180 2367 779)" fill="#403563"/>
+            <ellipse cx="3528.5" cy="805.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 805.5)" fill="#4D4567"/>
+            <ellipse cx="2573" cy="697.5" rx="633" ry="89.5" transform="rotate(180 2573 697.5)" fill="#403563"/>
+            <ellipse cx="1654.5" cy="840.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 840.5)" fill="#4D4567"/>
+            <ellipse cx="625.5" cy="720.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 720.5)" fill="#403563"/>
+        </svg>
+    </div>
 
 
         <div id="contact">
@@ -717,6 +556,15 @@
                     </form>
                     <span id="msg"></span>
                 </div>
+            </div>
+            <div class="social-media-right">
+                <h2>Follow Us!</h2>
+                <ul class="social-media-list">
+                    <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                </ul>
+                <h2>Email Us Directly!</h2>
+                <p>apadaptstudy@gmail.com</p>
             </div>
         </div>
         <div class="copyrt">

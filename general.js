@@ -595,7 +595,7 @@ function switchGenre() {
   }
 }
 
-//code for swtiching YT vid in adapt study
+//code for swtiching YT vid in adapt study^^
 
 
 function hsMathShow(letter) {
@@ -658,6 +658,8 @@ function apMathShow(letter) {
     document.getElementById('ap-math-stats').style.backgroundColor = '#22193E';
   }
 }
+
+// AP math button show content stuff ^^
 
 // script.js
 function changeVideo(videoSrc) {
