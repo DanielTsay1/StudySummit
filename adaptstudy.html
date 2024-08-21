@@ -154,12 +154,18 @@
 
     
 <!-- -------------Background image----------- -->
-        <div class="video-container">
-            <video autoplay muted loop id="video-background">
-                <source src="Vid.mp4" type="video/mp4">
-               
-            </video>
-        </div>
+<div class="video-container">
+    <video id="bg-video" autoplay muted loop>
+        <source src="vid.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="controls">
+    <button onclick="changeVideo('vid.mp4')">Video 1</button>
+    <button onclick="changeVideo('logo.png')">Video 2</button>
+    <button onclick="changeVideo('video3.mp4')">Video 3</button>
+    <button onclick="changeVideo('video4.mp4')">Video 4</button>
+</div>
 
         <!-- <div id="lofi"> -->
             <!-- Replace the src URL with your livestream's embed URL -->

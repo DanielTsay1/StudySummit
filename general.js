@@ -46,6 +46,7 @@ function startTimer()
     }, 1000);
 }
 
+
 function endTimer()
 {
     clearInterval(countdown);
@@ -599,26 +600,63 @@ function hsMathShow(letter) {
   if(letter === 'a')
   {
     document.getElementById('hs-math-alg1').style.display = 'flex';
-    document.getElementById('hs-math-alg1').style.backgroundColor = '#403563';
+    document.getElementById('hs-math-alg1').style.backgroundColor = '#453c63';
   } 
   else if (letter === 'b')
   {
     document.getElementById('hs-math-geo').style.display = 'flex';
-    document.getElementById('hs-math-geo').style.backgroundColor = '#403563';
+    document.getElementById('hs-math-geo').style.backgroundColor = '#453c63';
   }
   else if (letter === 'c')
   {
     document.getElementById('hs-math-alg2').style.display = 'flex';
-    document.getElementById('hs-math-alg2').style.backgroundColor = '#403563';
+    document.getElementById('hs-math-alg2').style.backgroundColor = '#453c63';
   }
   else if (letter === 'd')
   {
     document.getElementById('hs-math-trig').style.display = 'flex';
-    document.getElementById('hs-math-trig').style.backgroundColor = '#403563';
+    document.getElementById('hs-math-trig').style.backgroundColor = '#453c63';
   }
   else if (letter === 'e')
   {
     document.getElementById('hs-math-precalc').style.display = 'flex';
-    document.getElementById('hs-math-precalc').style.backgroundColor = '#403563';
+    document.getElementById('hs-math-precalc').style.backgroundColor = '#453c63';
   }
+}
+// high school math button show content stuff ^^
+
+function apMathShow(letter) {
+  document.getElementById('ap-math-precalc').style.display = 'none';
+  document.getElementById('ap-math-calcAB').style.display = 'none';
+  document.getElementById('ap-math-calcBC').style.display = 'none';
+  document.getElementById('ap-math-stats').style.display = 'none';
+  if(letter === 'a')
+  {
+    document.getElementById('ap-math-precalc').style.display = 'flex';
+    document.getElementById('ap-math-precalc').style.backgroundColor = '#22193E';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('ap-math-calcAB').style.display = 'flex';
+    document.getElementById('ap-math-calcAB').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('ap-math-calcBC').style.display = 'flex';
+    document.getElementById('ap-math-calcBC').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('ap-math-stats').style.display = 'flex';
+    document.getElementById('ap-math-stats').style.backgroundColor = '#22193E';
+  }
+}
+
+// script.js
+function changeVideo(videoSrc) {
+  const videoElement = document.getElementById('bg-video');
+  videoElement.pause(); // Pause the current video
+  videoElement.src = videoSrc; // Change the source
+  videoElement.load(); // Load the new video
+  videoElement.play(); // Play the new video
 }

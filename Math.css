@@ -55,6 +55,7 @@ body::-webkit-scrollbar {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 10px 10%;
     width: 80%;
@@ -78,7 +79,6 @@ body::-webkit-scrollbar {
 #link {
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .nav-home {
@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
 
 .nav-item{
     padding: 5px  15px;
-    transition: .5s ease;
+    transition: .7s ease;
     border-radius: 15px;
 
 }
@@ -178,6 +178,8 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
+
+
 .high-school-math {
     display: flex;
     flex-direction: column;
@@ -190,7 +192,6 @@ body::-webkit-scrollbar {
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 20px;
-
 }
 
 .hs-math-level {
@@ -218,7 +219,7 @@ body::-webkit-scrollbar {
 }
 
 .hs-math-level-title:hover {
-    background-color: #403563;
+    background-color: #453c63;
     transition: all;
     transition-duration: 500ms;
 }
@@ -228,6 +229,60 @@ body::-webkit-scrollbar {
     padding: 15px;
     border-radius: 20px 20px 0 0;
 }
+
+
+
+.ap-math {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ap-math-title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.ap-math-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+}
+
+.ap-math-level-title {
+    width: fit-content;
+    padding: 15px;
+    background-color: #171028;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.ap-math-level-title:hover {
+    background-color: #22193E;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.ap-math-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+
 
 .topic-section {
     width: 100%;
@@ -397,7 +452,7 @@ form .btn2{
   }
   
   /* Add a red background color to navbar links on hover */
-  .nav-list a:hover, .dropdown:hover .dropbtn {
+    .dropdown:hover .dropbtn {
     
     background-color: #8c80AA;
     border-radius: 15px;
@@ -418,7 +473,7 @@ form .btn2{
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -427,7 +482,7 @@ form .btn2{
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #736891;
     transition: .1s ease;
     border-radius: 15px 15px 0 0;
 
