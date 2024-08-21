@@ -341,3 +341,25 @@ form .btn2{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 87% 85%, 89% 25%, 10% 20%, 8% 80%, 0% 80%);
     z-index: 1;
 }
+
+.floating-link {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    transition: .7s ease;
+
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}

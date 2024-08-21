@@ -215,4 +215,24 @@ body::-webkit-scrollbar {
 
 
 
-    
+.floating-link {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    transition: .7s ease;
+
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}

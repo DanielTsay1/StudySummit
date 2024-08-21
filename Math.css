@@ -8,6 +8,7 @@ body{
     font-family: Poppins;
     font-size: 1.25rem;
     color: white;
+
 }
 
 body::-webkit-scrollbar {
@@ -763,3 +764,70 @@ input[type=radio]:checked ~ .option {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+
+
+
+  .arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-out */
+}
+
+/* Add this class when you want the arrow to fade out */
+.arrow-container.fade-out {
+    opacity: 0; /* Fully transparent */
+}
+
+/* Optional: The stop class from before, in case you want to stop movement too */
+.arrow-container.stop {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Styling for the down arrow */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 70px solid #453c63; /* Arrow color */
+    animation: float 1.5s infinite; /* Apply the floating animation */
+}
+
+/* Animation to create the floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.floating-link {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    transition: .7s ease;
+
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+

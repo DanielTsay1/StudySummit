@@ -17,7 +17,12 @@
         <script type="text/javascript" src="general.js"></script>
     </head>
     <body>
-       
+
+         
+
+
+
+
         <div class="overlay"></div>
         <div class="nav-bar">
             <div class="nav-home">
@@ -77,31 +82,45 @@
                     </a>
                 </div>
                 <div class="nav-item">
-                    <a id="link" href="adaptstudy.html">
-                        Adaptstudy
-                    </a>
+                    <div class="floating-link">
+                        <a id="link" href="adaptstudy.html">
+                            Adaptstudy
+                        </a>
+                    </div>
                 </div>
            
             </div>
         </div>
         <!--navigation bar^^-->
-
+        
         <div class="hero-container">
             <div class="hero">
                 <div class="hero-text">
                     <div class="hero-header">
                         Begin your Math journey
                     </div>
+                    
                 </div>
                 <div class="hero-image-container">
                     <img class="hero-image" src="https://wallpapers.com/images/featured/math-background-jbcyizvw0ckuvcro.jpg">
                 </div>
             </div>
         </div>
+        
         <br>
         <br>
         <br>
 
+  <div class="arrow-container">
+        <div class="arrow-down"></div>
+  </div>
+    
+        <!-- Content goes here --><!-- Placeholder content -->
+    
+        <!-- Stopping point for the arrow -->
+       
+    
+       
     <div class="svg-divider-container">
         <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
@@ -147,6 +166,7 @@
         </svg>
     </div>
 
+    <div id="stop-point""></div>
 
     <div class="alt-container">
         <div class="high-school-math-title">High School Math</div>
@@ -720,6 +740,24 @@
                  })
                 .catch(error => console.error('Error!', error.message))
             })
+
+            document.addEventListener('DOMContentLoaded', function () {
+            const arrowContainer = document.querySelector('.arrow-container');
+            const stopPoint = document.querySelector('#stop-point');
+
+            function handleScroll() {
+                const stopPointPosition = stopPoint.getBoundingClientRect().top + window.scrollY;
+                const scrollPosition = window.scrollY + window.innerHeight;
+
+                if (scrollPosition >= stopPointPosition) {
+                    arrowContainer.classList.add('fade-out');
+                } else {
+                    arrowContainer.classList.remove('fade-out');
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll);
+        });
           </script>
     </body>
 </html>
