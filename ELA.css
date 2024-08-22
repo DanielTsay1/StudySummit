@@ -127,13 +127,14 @@ body::-webkit-scrollbar {
     flex-direction: row;
     width: 100%;
     padding: 10% 0;
-    margin-top: 5%;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    width: 50%
+    padding: 40px;
+    width: 50%;
+    align-self: center; 
 }
 
 .hero-header {
@@ -163,6 +164,17 @@ body::-webkit-scrollbar {
     background: transparent;
     border-color:#8c80AA;
     width: 100%;
+}
+
+.svg-divider-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.svg-divider {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .study-text {
