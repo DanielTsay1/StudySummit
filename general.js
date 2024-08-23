@@ -661,6 +661,95 @@ function apMathShow(letter) {
 
 // AP math button show content stuff ^^
 
+function gScienceShow(letter) {
+  document.getElementById('gs-physics').style.display = 'none';
+  document.getElementById('gs-bio').style.display = 'none';
+  document.getElementById('gs-chem').style.display = 'none';
+  document.getElementById('gs-envsci').style.display = 'none';
+  if(letter === 'a')
+  {
+    document.getElementById('gs-physics').style.display = 'flex';
+    document.getElementById('gs-physics').style.backgroundColor = '#453c63';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('gs-bio').style.display = 'flex';
+    document.getElementById('gs-bio').style.backgroundColor = '#453c63';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('gs-chem').style.display = 'flex';
+    document.getElementById('gs-chem').style.backgroundColor = '#453c63';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('gs-envsci').style.display = 'flex';
+    document.getElementById('gs-envsci').style.backgroundColor = '#453c63';
+  }
+}
+
+// general science show content stuff^^
+
+function apScienceShow(letter) {
+  document.getElementById('ap-science-bio').style.display = 'none';
+  document.getElementById('ap-science-chem').style.display = 'none';
+  document.getElementById('ap-science-envsci').style.display = 'none';
+  document.getElementById('ap-science-physics-1').style.display = 'none';
+  document.getElementById('ap-science-physics-2').style.display = 'none';
+  document.getElementById('ap-science-physics-c').style.display = 'none';
+  document.getElementById('ap-science-csp').style.display = 'none';
+  document.getElementById('ap-science-csa').style.display = 'none';
+  document.getElementById('ap-science-psych').style.display = 'none';
+
+  if(letter === 'a')
+  {
+    document.getElementById('ap-science-bio').style.display = 'flex';
+    document.getElementById('ap-science-bio').style.backgroundColor = '#22193E';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('ap-science-chem').style.display = 'flex';
+    document.getElementById('ap-science-chem').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('ap-science-envsci').style.display = 'flex';
+    document.getElementById('ap-science-envsci').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('ap-science-physics-1').style.display = 'flex';
+    document.getElementById('ap-science-physics-1').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'e')
+  {
+    document.getElementById('ap-science-physics-2').style.display = 'flex';
+    document.getElementById('ap-science-physics-2').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'f')
+  {
+    document.getElementById('ap-science-physics-c').style.display = 'flex';
+    document.getElementById('ap-science-physics-c').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'g')
+  {
+    document.getElementById('ap-science-csp').style.display = 'flex';
+    document.getElementById('ap-science-csp').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'h')
+  {
+    document.getElementById('ap-science-csa').style.display = 'flex';
+    document.getElementById('ap-science-csa').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'i')
+  {
+    document.getElementById('ap-science-psych').style.display = 'flex';
+    document.getElementById('ap-science-psych').style.backgroundColor = '#22193E';
+  }
+}
+
+// AP science show content stuff
+
 // script.js
 function changeVideo(videoSrc) {
   const videoElement = document.getElementById('bg-video');

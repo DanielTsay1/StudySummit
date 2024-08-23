@@ -46,6 +46,7 @@ body::-webkit-scrollbar {
 
 .alt-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 10px 10%;
     width: 80%;
@@ -54,6 +55,7 @@ body::-webkit-scrollbar {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 10px 10%;
     width: 80%;
@@ -177,25 +179,111 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
-.study-text {
-    width: 70%;
+.general-science {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.study-button {
-    border-color: #4d4567;
-    border-radius: 20px;
-    background-color: #4d4567;
+.general-science-title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.general-science-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+}
+
+.general-science-level-title {
+    width: fit-content;
     padding: 15px;
-    width: 20%;
-    transition-duration: 0.5s;
-    transition-property: all;
+    background-color: #4d4567;
+    color: white;
+    cursor: pointer;
+    border: 1px #4d4567;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
-.study-button:hover {
-    border-radius: 30px;
-    background-color: #8c80AA;
-
+.general-science-level-title:hover {
+    background-color: #453c63;
+    box-shadow: 8px 5px 5px rgb(52, 35, 78);
+    border: 1px solid rgb(52, 35, 78);
+    transition: all;
+    transition-duration: 500ms;
 }
+
+.gs-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.ap-science {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ap-science-title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.ap-science-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+}
+
+.ap-science-level-title {
+    width: fit-content;
+    padding: 15px;
+    background-color: #171028;
+    color: white;
+    cursor: pointer;
+    border: 1px #171028;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.ap-science-level-title:hover {
+    background-color: #22193E;
+    box-shadow: 8px 5px 5px #2f254e;
+    border: 1px solid #2f254e;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.ap-science-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
 
 .topic-section {
     width: 100%;
