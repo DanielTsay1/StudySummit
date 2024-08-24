@@ -274,7 +274,7 @@ function toggleVisibility3() {
 function toggleVisibility4() {
   var box = document.getElementById("video");
   if (box.style.display === "none") {
-    box.style.display = "block";
+    box.style.display = "flex";
   } else {
     box.style.display = "none";
   }
@@ -282,7 +282,7 @@ function toggleVisibility4() {
 function toggleVisibility4() {
   var box = document.getElementById("video-container");
   if (box.style.display === "none") {
-    box.style.display = "block";
+    box.style.display = "flex";
   } else {
     box.style.display = "none";
   }
