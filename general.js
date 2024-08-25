@@ -665,7 +665,6 @@ function gScienceShow(letter) {
   document.getElementById('gs-physics').style.display = 'none';
   document.getElementById('gs-bio').style.display = 'none';
   document.getElementById('gs-chem').style.display = 'none';
-  document.getElementById('gs-envsci').style.display = 'none';
   if(letter === 'a')
   {
     document.getElementById('gs-physics').style.display = 'flex';
@@ -681,11 +680,7 @@ function gScienceShow(letter) {
     document.getElementById('gs-chem').style.display = 'flex';
     document.getElementById('gs-chem').style.backgroundColor = '#453c63';
   }
-  else if (letter === 'd')
-  {
-    document.getElementById('gs-envsci').style.display = 'flex';
-    document.getElementById('gs-envsci').style.backgroundColor = '#453c63';
-  }
+
 }
 
 // general science show content stuff^^
@@ -700,6 +695,7 @@ function apScienceShow(letter) {
   document.getElementById('ap-science-csp').style.display = 'none';
   document.getElementById('ap-science-csa').style.display = 'none';
   document.getElementById('ap-science-psych').style.display = 'none';
+  document.getElementById('ap-science-physics-c-2').style.display = 'none';
 
   if(letter === 'a')
   {
@@ -746,6 +742,11 @@ function apScienceShow(letter) {
     document.getElementById('ap-science-psych').style.display = 'flex';
     document.getElementById('ap-science-psych').style.backgroundColor = '#22193E';
   }
+  else if (letter === 'z')
+    {
+      document.getElementById('ap-science-physics-c-2').style.display = 'flex';
+      document.getElementById('ap-science-physics-c-2').style.backgroundColor = '#22193E';
+    }
 }
 
 // AP science show content stuff

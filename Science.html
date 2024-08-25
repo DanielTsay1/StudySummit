@@ -47,16 +47,19 @@
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a href="#Physics">AP Physics</a>
-                      <a href="#Bio">AP Biology</a>
-                      <a href="#Chem">AP Chemistry</a>
-                      <a href="#CSP">AP Computer Science Principles</a>
-                      <a href="#CSA">AP Computer Science A</a>
-                      <a href="#EnvSci">AP Environmental Science</a>
-                      <!-- <a href="#Astronomy">Astronomy</a> -->
-                      <a href="#PhysicsC">AP Physics C E & M</a>
-                      <!-- <a href="#Mech">AP Physics C Mechanics</a> -->
-                      <a href="#Psych">AP Psychology</a>
+                      <a href="#Physics">Physics</a>
+                      <a href="#Bio">Biology</a>
+                      <a href="#Chem">Chemistry</a>
+                      <a href="#apBio">AP Biology</a>
+                      <a href="#apChem">AP Chemistry</a>
+                      <a href="#apEnvSci">AP Environmental Science</a>
+                      <a href="#apP1">AP Physics 1</a>
+                      <a href="#apP2">AP Physics 2</a>
+                      <a href="#apPCM">AP Physics C Mechanics</a>
+                      <a href="#apPCEM">AP Physics C E&M</a>
+                      <a href="#apCSP">AP Computer Science Principles</a>
+                      <a href="#apCSA">AP Computer Science A</a>
+                      <a href="#apPsych">AP Psychology</a>
                     </div>
                   </div>
 
@@ -152,13 +155,15 @@
             </svg>
         </div>
         
-    <div id = Physics>
+        <div id=Physics></div>
+        <div id=Bio></div>
+        <div id=Chem></div>
 
         <div class="alt-container">
             <div class="general-science-title">General Science</div>
             <div class="general-science">
                 <div class="general-science-level">
-                    <button onclick="gScienceShow('a')" class="general-science-level-title">Physics</button>
+                    <button onclick="gScienceShow('a')" class="general-science-level-title">Physics ⚛️</button>
                     <div id="gs-physics" class="gs-content">
                         <ul class="resource-list">
                             <li>
@@ -180,7 +185,7 @@
                     </div>
                 </div>
                 <div class="general-science-level">
-                    <button onclick="gScienceShow('b')" class="general-science-level-title">Biology</button>
+                    <button onclick="gScienceShow('b')" class="general-science-level-title">Biology 🌱</button>
                     <div id="gs-bio" class="gs-content">
                         <ul class="resource-list">
                             <li>
@@ -202,7 +207,7 @@
                     </div>
                 </div>
                 <div class="general-science-level">
-                    <button onclick="gScienceShow('c')" class="general-science-level-title">Chemistry</button>
+                    <button onclick="gScienceShow('c')" class="general-science-level-title">Chemistry 🧪</button>
                     <div id="gs-chem" class="gs-content">
                         <ul class="resource-list">
                             <li>
@@ -221,12 +226,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="general-science-level">
-                    <button onclick="gScienceShow('d')" class="general-science-level-title">Environmental Science</button>
-                    <div id="gs-envsci" class="gs-content">
-                        
                     </div>
                 </div>
                 
@@ -278,12 +277,18 @@
             </svg>
         </div>
 
-
+        <div id=apPhysics></div>
+        <div id=apBio></div>
+        <div id=apChem></div>
+        <div id=apEnvSci></div>
+        <div id=apP1></div>
+        <div id=apP2></div>
+        
         <div class="container">
             <div class="ap-science-title">AP Science</div>
             <div class="ap-science">
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('a')" class="ap-science-level-title">AP Biology</button>
+                    <button onclick="apScienceShow('a')" class="ap-science-level-title">AP Biology 🧬 </button>
                     <div id="ap-science-bio" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
@@ -315,12 +320,12 @@
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('b')" class="ap-science-level-title">AP Chemistry</button>
+                    <button onclick="apScienceShow('b')" class="ap-science-level-title">AP Chemistry 🧪</button>
                     <div id="ap-science-chem" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
                                 <a href="https://library.fiveable.me/ap-chem">
-                                    Fiveable - has guides and practice questions for AP Chemistry. Great review resource!
+                                    Fiveable - has study guides and practice questions for AP Chem
                                 </a>
                             </li>
                             <li>
@@ -340,14 +345,14 @@
                             </li>
                             <li>
                                 <a href="https://www.khanacademy.org/science/ap-chemistry-beta">
-                                    Khan Academy - has videos and practice questions for AP Chem
+                                    Khan Academy - has tutorial videos and practice questions for AP Chem
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('c')" class="ap-science-level-title">AP Environmental Science</button>
+                    <button onclick="apScienceShow('c')" class="ap-science-level-title">AP Environmental Science 🌍</button>
                     <div id="ap-science-envsci" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
@@ -357,7 +362,7 @@
                             </li>
                             <li>
                                 <a href="https://library.fiveable.me/ap-enviro">
-                                    Fiveable - has study guides and practice questions on all topics in AP Chem
+                                    Fiveable - has study guides and practice questions on all topics in AP Environmental Science
                                 </a>
                             </li>
                             <li>
@@ -373,8 +378,13 @@
                         </ul>
                     </div>
                 </div>
+                <div id=apPCM></div>
+                <div id=apPCEM></div>
+                <div id=apCSP></div>
+                <div id=apCSA></div>
+                <div id=apPsych></div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('d')" class="ap-science-level-title">AP Physics 1</button>
+                    <button onclick="apScienceShow('d')" class="ap-science-level-title">AP Physics 1 ⚛️</button>
                     <div id="ap-science-physics-1" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
@@ -399,19 +409,19 @@
                             </li>
                             <li>
                                 <a href="https://www.crackap.com/ap/physics-1/index.html">
-                                   Crack AP - Many great practice tests and questions to prep for the AP physics 1 exam!
+                                   Crack AP - PLENTY of practice test to get familiar with content in AP Physics 1
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('e')" class="ap-science-level-title">AP Physics 2</button>
+                    <button onclick="apScienceShow('e')" class="ap-science-level-title">AP Physics 2 🧲</button>
                     <div id="ap-science-physics-2" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
                                 <a href="https://library.fiveable.me/ap-physics-2-revised">
-                                    Fiveable - has guides and questions for AP physics C
+                                    Fiveable - has guides and questions for AP physics 2
                                 </a>
                             </li>
                             <li>
@@ -433,12 +443,12 @@
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('f')" class="ap-science-level-title">AP Physics C</button>
+                    <button onclick="apScienceShow('f')" class="ap-science-level-title">AP Physics C Mechanics ⚙️</button>
                     <div id="ap-science-physics-c" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
                                 <a href="https://library.fiveable.me/ap-physics-c-m">
-                                    Fiveable - has guides and questions for AP physics C
+                                    Fiveable - has guides and questions for AP physics C Mechanics
                                 </a>
                             </li>
                             <li>
@@ -448,44 +458,61 @@
                             </li>
                             <li>
                                 <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering the whole course IN DETAIL
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.crackap.com/ap/physics-c-mechanics/">
-                                    Crack AP - PLENTY of practice tests
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.khanacademy.org/hc/en-us/community/posts/115008349588-AP-Physics-C-Course">
-                                    Khan Academy - great course work and questions for AP physics C
+                                    Crack AP - PLENTY of practice tests for AP Physics C Mechanics
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('g')" class="ap-science-level-title">AP Computer Science Principles</button>
+                    <button onclick="apScienceShow('z')" class="ap-science-level-title">AP Physics C E&M ⚡</button>
+                    <div id="ap-science-physics-c-2" class="ap-science-content">
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://library.fiveable.me/ap-physics-c-e-m">
+                                    Fiveable - has guides and questions for AP physics C E&M
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://myap.collegeboard.org/login">
+                                    AP Classroom - ask your teacher to assign practices test/quizzes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.crackap.com/ap/physics-c-electricity-and-magnetism/index.html">
+                                    Crack AP - PLENTY of practice tests for AP Physics C E&M
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ap-science-level">
+                    <button onclick="apScienceShow('g')" class="ap-science-level-title">AP Computer Science Principles 💻</button>
                     <div id="ap-science-csp" class="ap-science-content">
                         <ul class="resource-list">
                             <li>
-                                <a href="hhttps://library.fiveable.me/ap-comp-sci-p">
+                                <a href="https://library.fiveable.me/ap-comp-sci-p">
                                     Fiveable - has guides and practice questions for AP CSP
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.khanacademy.org/computing/ap-computer-science-principles">
-                                    Khan Academy - has course guide and plenty of practice quizes for AP CSP
+                                    Khan Academy - has instructional videos, guides and plenty of practice quizzes for AP CSP
                                 </a>
                             </li>
                             <li>
                                 <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                    AP Classroom - ask your teacher to assign practices test/quizzes
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.crackap.com/ap/computer-science-principles/">
-                                    Crack AP - PLENTY of practice tests for the AP Exam
+                                    Crack AP - PLENTY of practice tests for AP CSP
                                 </a>
                             </li>
                             
@@ -494,9 +521,14 @@
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('h')" class="ap-science-level-title">AP Computer Science A</button>
+                    <button onclick="apScienceShow('h')" class="ap-science-level-title">AP Computer Science A 🖥️</button>
                     <div id="ap-science-csa" class="ap-science-content">
                         <ul class="resource-list">
+                            <li>
+                                <a href="https://library.fiveable.me/ap-comp-sci-a">
+                                    Fiveable - has guides and practice questions for AP CSA
+                                </a>
+                            </li>
                             <li>
                                 <a href="https://code.org/curriculum/csa">
                                     Code.org - great place to find videos, examples and questions
@@ -504,44 +536,44 @@
                             </li>
                             <li>
                                 <a href="https://runestone.academy/ns/books/published/csawesome/index.html">
-                                    runestone.academy - great explanations and diagrams
+                                    Runestone Academy (CSAwesome) - great explanations and diagrams
                                 </a>
                             </li>
                             <li>
                                 <a href="https://codehs.com/course/6165/overview">
-                                    Codehs - overview of AP CSA
+                                    CodeHS - overview of AP CSA
                                 </a>
                             </li>
                             <li>
                                 <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                    AP Classroom - ask your teacher to assign practices test/quizzes
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="ap-science-level">
-                    <button onclick="apScienceShow('i')" class="ap-science-level-title">AP Psychology</button>
+                    <button onclick="apScienceShow('i')" class="ap-science-level-title">AP Psychology 🧠</button>
                     <div id="ap-science-psych" class="ap-science-content">
-                        <ul class="alt-resource-list">
+                        <ul class="resource-list">
                             <li>
                                 <a href="https://library.fiveable.me/ap-psych">
-                                    Fiveable - has guides and questions for AP psych
+                                    Fiveable - has study guides and questions for AP psych
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.khanacademy.org/hc/en-us/community/posts/360072139392-AP-Psychology">
-                                    Khan Academy - has courses and questions for AP psych
+                                <a href="https://www.youtube.com/@MrSinn/playlists">
+                                    Mr.Sinn - Youtube channel with review videos of topics in AP Psych
                                 </a>
                             </li>
                             <li>
                                 <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                    AP Classroom - ask your teacher to assign practices test/quizzes
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.crackap.com/ap/psychology/">
-                                    Crack AP - PLENTY of practice tests here for AP pscyh
+                                    Crack AP - PLENTY of practice tests here for AP Psych
                                 </a>
                             </li>
                         </ul>
@@ -552,592 +584,81 @@
             </div>
         </div>
 
-
-
-
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="section-title">
-                    Physics
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering the whole course
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/science/ap-college-physics-1">
-                                    Khan Academy - has great videos and questions to learn and review AP physics 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.princetonreview.com/college-advice/ap-physics-1-exam">
-                                   Princeton Review - a great review and summary of the AP exam, what to expect and what you should practice
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://library.fiveable.me/ap-physics-1">
-                                   Fiveable - Study guides, study materials, course work and practice questions for AP physics 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/physics-1/index.html">
-                                   Crack AP - Many great practice tests and questions to prep for the AP phsyics 1 exam!
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <div class="general-resources">
-                        General Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/science/high-school-physics">
-                                    Khan Academy - has the specific course work for normal high school physics
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=-6IgkG5yZfo">
-                                    The Organic Chemisty Tutor - Basic Introduction and Review of Physics
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=OoO5d5P0Jn4&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV">
-                                    Playlist of videos that go over physics materials
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!--Math Section ^^-->
-    <div id = Bio>
-        <div class="container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    AP Biology
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://library.fiveable.me/ap-bio">
-                                    Fiveable - has guides and questions for all of AP Bio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://library.fiveable.me/ap-bio">
-                                    Khan Academy - has videos and practice questions for AP Bio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/biology/index.html">
-                                    Crack AP - PLENTY of practice tests here for AP Bio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.barronseduc.com/ap-biology-resources">
-                                    BARRON'S - Lots of great review and information about the exam. FRQ's provided
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <div class="general-resources">
-                        General Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/science/high-school-biology">
-                                    Khan Academy - Specific course work of High School Biology
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://study.com/academy/course/biology-high-school.html#/overview">
-                                    Study.com - Great course summary and course work through High School Biology
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=7xeFP0SEDdc">
-                                    Amoeba Sister - fun and engaging videos that go over Biology
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Science Section ^^-->
-    <div id = Chem>
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="section-title">
-                    AP Chemistry
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://library.fiveable.me/ap-chem">
-                                    Fiveable - has guides and practice questions for AP Chemistry. Great review resource!
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/chemistry/index.html">
-                                    Crack AP - PLENTY of practice tests here for AP Chem
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.bozemanscience.com/ap-chemistry">
-                                    Bozeman Science - Great course work and guide through AP Chem
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.princetonreview.com/college-advice/ap-chemistry-exam">
-                                    Princeton Review - Guide to the AP Chemistry Exam
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <div class="general-resources">
-                        General Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/science/hs-chemistry">
-                                    Khan Academy - Great course work through High School Chemistry
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=OvAfXktz5Ag&list=PLMlqayk59Ivp3Ul_4fA_l1A6Xtkbcwbei">
-                                    Chad's prep - Whole high school chem course through youtube videos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=bka20Q9TN6M&pp=ygUVSGlnaCBzY2hvb2wgY2hlbWlzdHJ5">
-                                    The Organice Chemistry Tutor - Great introduction to basic concepts of Chemistry
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!--ELA section^^-->
-    <div id = CSP>
-        <div class="container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    AP Computer science principles
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="hhttps://library.fiveable.me/ap-comp-sci-p">
-                                    Fiveable - has guides and practice questions for AP CSP
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/computing/ap-computer-science-principles">
-                                    Khan Academy - has course guide and plenty of practice quizes for AP CSP
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/ap/computer-science-principles/">
-                                    Crack AP - PLENTY of practice tests for the AP Exam
-                                </a>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                
-                    <div class="general-resources">
-                       
-                        <ul class="alt-resource-list">
-                            
-                                <li>
-                                    <a href="https://www.princetonreview.com/college-advice/ap-computer-science-principles-exam">
-                                        Princeton Review - Provides exam information and prep for the exam
-                                    </a>
-                                </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="svg-divider-container">
+            <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
+                <rect width="2262" height="206" fill="#171028"/>
+                <rect y="121" width="463" height="113" fill="#22193E"/>
+                <rect x="2218" width="1984" height="206" fill="#171028"/>
+                <rect y="171" width="2016" height="147" fill="#22193E"/>
+                <rect x="3740" y="206" width="462" height="112" fill="#22193E"/>
+                <rect x="1836" y="147" width="1984" height="171" fill="#22193E"/>
+                <ellipse cx="673.5" cy="121" rx="673.5" ry="72" fill="#171028"/>
+                <ellipse cx="1629.5" cy="229" rx="632.5" ry="89" fill="#22193E"/>
+                <ellipse cx="2547.5" cy="85.5" rx="964.5" ry="85.5" fill="#171028"/>
+                <ellipse cx="3576.5" cy="206" rx="625.5" ry="73" fill="#22193E"/>
+                <rect x="4202" y="524" width="2262" height="205" transform="rotate(180 4202 524)" fill="#30274D"/>
+                <rect x="4202" y="403" width="462" height="112" transform="rotate(180 4202 403)" fill="#22193E"/>
+                <rect x="1984" y="524" width="1984" height="205" transform="rotate(180 1984 524)" fill="#30274D"/>
+                <rect x="4202" y="353" width="2016" height="147" transform="rotate(180 4202 353)" fill="#22193E"/>
+                <rect x="463" y="319" width="463" height="113" transform="rotate(180 463 319)" fill="#22193E"/>
+                <rect x="2367" y="377" width="1984" height="171" transform="rotate(180 2367 377)" fill="#22193E"/>
+                <ellipse cx="3528.5" cy="403.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 403.5)" fill="#30274D"/>
+                <ellipse cx="2573" cy="295.5" rx="633" ry="89.5" transform="rotate(180 2573 295.5)" fill="#22193E"/>
+                <ellipse cx="1654.5" cy="438.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 438.5)" fill="#30274D"/>
+                <ellipse cx="625.5" cy="318.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 318.5)" fill="#22193E"/>
+                <rect y="403" width="2262" height="205" fill="#30274D"/>
+                <rect y="524" width="462" height="112" fill="#403563"/>
+                <rect x="2218" y="403" width="1984" height="205" fill="#30274D"/>
+                <rect y="574" width="2016" height="147" fill="#403563"/>
+                <rect x="3739" y="608" width="463" height="113" fill="#403563"/>
+                <rect x="1835" y="550" width="1984" height="171" fill="#403563"/>
+                <ellipse cx="673.5" cy="523.5" rx="673.5" ry="72.5" fill="#30274D"/>
+                <ellipse cx="1629" cy="631.5" rx="633" ry="89.5" fill="#403563"/>
+                <ellipse cx="2547.5" cy="488.5" rx="964.5" ry="85.5" fill="#30274D"/>
+                <ellipse cx="3576.5" cy="608.5" rx="625.5" ry="73.5" fill="#403563"/>
+                <rect x="4202" y="926" width="2262" height="205" transform="rotate(180 4202 926)" fill="#4D4567"/>
+                <rect x="4202" y="805" width="462" height="112" transform="rotate(180 4202 805)" fill="#403563"/>
+                <rect x="1984" y="926" width="1984" height="205" transform="rotate(180 1984 926)" fill="#4D4567"/>
+                <rect x="4202" y="755" width="2016" height="147" transform="rotate(180 4202 755)" fill="#403563"/>
+                <rect x="2367" y="779" width="1984" height="171" transform="rotate(180 2367 779)" fill="#403563"/>
+                <ellipse cx="3528.5" cy="805.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 805.5)" fill="#4D4567"/>
+                <ellipse cx="2573" cy="697.5" rx="633" ry="89.5" transform="rotate(180 2573 697.5)" fill="#403563"/>
+                <ellipse cx="1654.5" cy="840.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 840.5)" fill="#4D4567"/>
+                <ellipse cx="625.5" cy="720.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 720.5)" fill="#403563"/>
+            </svg>
         </div>
 
-        <div id = CSA>
-            <div class="alt-container">
-                <div class="topic-section">
-                    <div class="section-title">
-                        AP Computer Science A
-                    </div>
-                    <div class="resources">
-                        <div class="ap-resources">
-                            Resources
-                            <ul class="resource-list">
-                                <li>
-                                    <a href="https://code.org/curriculum/csa">
-                                        Code.org - great place to find videos, examples and questions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://runestone.academy/ns/books/published/csawesome/index.html">
-                                        runestone.academy - great explanations and diagrams
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://codehs.com/course/6165/overview">
-                                        Codehs - overview of AP CSA
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://myap.collegeboard.org/login">
-                                        AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <div class="general-resources">
-                            
-                            <ul class="resource-list">
-                                <li>
-                                    <a href="https://www.princetonreview.com/college-advice/ap-computer-science-a-exam">
-                                        Princeton Review - review and summary of exam with some practice questions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://library.fiveable.me/ap-comp-sci-a/study-tools/2024-ap-computer-science-exam-guide/blog/c0f5inSMKJ1P24v6OIQ6">
-                                        Fiveable - great questions and walk through to prepare for AP CSA exam
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.crackap.com/ap/computer-science-a/">
-                                        Crack AP - Lots of great practice tests for AP CSA
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id = EnvSci>
-                <div class="container">
-                    <div class="topic-section">
-                        <div class="alt-section-title">
-                            Environmental Science
-                        </div>
-                        <div class="resources">
-                            <div class="ap-resources">
-                                AP Resources
-                                <ul class="alt-resource-list">
-                                    <li>
-                                        <a href="https://www.khanacademy.org/science/ap-college-environmental-science">
-                                            Khan Academy - Great place to reveiw and practice for AP exam
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://library.fiveable.me/ap-enviro">
-                                            fiveable - great review and questions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://myap.collegeboard.org/login">
-                                            AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.crackap.com/ap/environmental-science/">
-                                            Crack AP - PLENTY of practice tests here for environmental-science
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                            <!-- <div class="general-resources">
-                                General Resources
-                                <ul class="alt-resource-list">
-                                    <li>
-                                        <a href="https://www.khanacademy.org/">
-                                            Khan Academy - has resources for a lot of history content
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://openstax.org/subjects/humanities">
-                                            Openstax - textbook style content on World History and US History
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- <div id = Astronomy>
-                    <div class="alt-container">
-                        <div class="topic-section">
-                            <div class="section-title">
-                                Astronomy
-                            </div>
-                            <div class="resources">
-                                <div class="ap-resources">
-                                    Resources
-                                    <ul class="resource-list">
-                                        <li>
-                                            <a href="https://www.youtube.com/watch?v=0rHUDWjR5gg&list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL">
-                                                Crash Course - play list going over the astronomy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.khanacademy.org/science/cosmology-and-astronomy">
-                                                Khan Academy - has great videos and questions to learn Astronomy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
-                                                The Organic Chemistry Tutor - a video that provides a well thourough and comprehensive review of algebra 1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.ixl.com/math/algebra-1">
-                                                IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            
-                                 <div class="general-resources">
-                                    Resources
-                                    <ul class="resource-list">
-                                        <li>
-                                            <a href="https://www.khanacademy.org/">
-                                                Khan Academy - has videos and questions for all math K-12
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://mathigon.org/">
-                                                Mathigon - courses on math through the middle school and high school level
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://openstax.org/subjects/math">
-                                                Openstax - textbook style content on all high school math topics
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div> -->
-                            <!-- </div>
-                        </div>
-                    </div>    --> 
-             
-                <div id = PhysicsC>
-                    <div class="alt-container">
-                        <div class="topic-section">
-                            <div class="alt-section-title">
-                                AP Physics C / Mechanics
-                            </div>
-                            <div class="resources">
-                                <div class="ap-resources">
-                                    AP Resources
-                                    <ul class="alt-resource-list">
-                                        <li>
-                                            <a href="https://library.fiveable.me/ap-physics-c-m">
-                                                Fiveable - has guides and questions for AP physics C
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.princetonreview.com/college-advice/ap-physics-c-exam">
-                                                Princeton Review - great overview and summary of the exam
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://myap.collegeboard.org/login">
-                                                AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.crackap.com/ap/physics-c-mechanics/">
-                                                Crack AP - PLENTY of practice tests
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://support.khanacademy.org/hc/en-us/community/posts/115008349588-AP-Physics-C-Course">
-                                                Khan Academy - great course work and questions for AP physics C
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            
-                                <div class="general-resources">
-                                    Mechanics
-                                    <ul class="alt-resource-list">
-                                        <li>
-                                            <a href="https://www.youtube.com/playlist?list=PLoGgviqq48467T6PU5a6QwxNgUb5SgI9V">
-                                                Play list with many reviews, explanations and walk through
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://library.fiveable.me/ap-physics-c-m">
-                                                fiveable - Mechanics Exam Review
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div id = Mech>
-                        <div class="alt-container">
-                            <div class="topic-section">
-                                <div class="section-title">
-                                    AP Physics C Mechanics
-                                </div>
-                                <div class="resources">
-                                    <div class="ap-resources">
-                                        Resources
-                                        <ul class="resource-list">
-                                            <li>
-                                                <a href="https://www.mathplanet.com/education/algebra-1">
-                                                    Math Planet - easy to follow guide through algebra 1
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.khanacademy.org/math/algebra">
-                                                    Khan Academy - has great videos and questions to learn Algebra 1
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/watch?v=TbJ5gqLRpeM">
-                                                    The Organic Chemistry Tutor - a video that provides a well thourough and comprehensive review of algebra 1
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.ixl.com/math/algebra-1">
-                                                    IXL - goes over many different subjects in algebra 1 and also subjects to prepare for algebra 2
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                
-                                    <!-- <div class="general-resources">
-                                        Resources
-                                        <ul class="resource-list">
-                                            <li>
-                                                <a href="https://www.khanacademy.org/">
-                                                    Khan Academy - has videos and questions for all math K-12
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://mathigon.org/">
-                                                    Mathigon - courses on math through the middle school and high school level
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://openstax.org/subjects/math">
-                                                    Openstax - textbook style content on all high school math topics
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>  
-                        <div id = Psych>
-                            <div class="container">
-                                <div class="topic-section">
-                                    <div class="alt-section-title">
-                                        AP Psychology
-                                    </div>
-                                    <div class="resources">
-                                        <div class="ap-resources">
-                                            AP Resources
-                                            <ul class="alt-resource-list">
-                                                <li>
-                                                    <a href="https://library.fiveable.me/ap-psych">
-                                                        Fiveable - has guides and questions for AP psych
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://support.khanacademy.org/hc/en-us/community/posts/360072139392-AP-Psychology">
-                                                        Khan Academy - has courses and questions for AP psych
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://myap.collegeboard.org/login">
-                                                        AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.crackap.com/ap/psychology/">
-                                                        Crack AP - PLENTY of practice tests here for AP pscyh
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    
-                                        <!-- <div class="general-resources">
-                                            General Resources
-                                            <ul class="alt-resource-list">
-                                                <li>
-                                                    <a href="https://www.khanacademy.org/">
-                                                        Khan Academy - has resources for a lot of history content
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://openstax.org/subjects/humanities">
-                                                        Openstax - textbook style content on World History and US History
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div> 
+
             
 
         <div id="contact">
-        <div class="footer-container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="contact-text">Have a suggestion for resources? Contact us here!</h1>
-                    <!-- <p><i class="fa-regular fa-envelope"></i>...@gmail.com</p> -->
+            <div class="footer-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="contact-text">Have a suggestion for resources? Contact us here!</h1>
+                        <!-- <p><i class="fa-regular fa-envelope"></i>...@gmail.com</p> -->
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message and Links"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message and Links"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                <div class="social-media-right">
+                    <h2>Follow Us!</h2>
+                    <ul class="social-media-list">
+                        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                    </ul>
+                    <h2>Email Us Directly!</h2>
+                    <p>apadaptstudy@gmail.com</p>
                 </div>
             </div>
-        </div>
         <div class="copyrt">
             <p>© Copyright Daniel Tsay, Ethan Tay, Brian Lin. All Rights Reserved</p>
         </div>
