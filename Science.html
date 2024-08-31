@@ -108,8 +108,16 @@
         <br>
         <br>
         <br>
-
-
+        <div class="arrow-container">
+            <div class="arrow-down"></div>
+      </div>
+        
+            <!-- Content goes here --><!-- Placeholder content -->
+        
+            <!-- Stopping point for the arrow -->
+           
+        
+           
         <div class="svg-divider-container">
             <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
@@ -154,6 +162,10 @@
                 <ellipse cx="625.5" cy="720.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 720.5)" fill="#403563"/>
             </svg>
         </div>
+    
+    
+        
+        <div id="stop-point"></div>
         
         <div id=Physics></div>
         <div id=Bio></div>
@@ -681,5 +693,25 @@
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
+           <script>
+            // JavaScript directly in the HTML
+            document.addEventListener('DOMContentLoaded', function () {
+                const arrowContainer = document.querySelector('.arrow-container');
+                const stopPoint = document.querySelector('#stop-point');
+    
+                function handleScroll() {
+                    const stopPointPosition = stopPoint.getBoundingClientRect().top + window.scrollY;
+                    const scrollPosition = window.scrollY + window.innerHeight;
+    
+                    if (scrollPosition >= stopPointPosition) {
+                        arrowContainer.classList.add('fade-out');
+                    } else {
+                        arrowContainer.classList.remove('fade-out');
+                    }
+                }
+    
+                window.addEventListener('scroll', handleScroll);
+            });
+        </script>
     </body>
 </html>

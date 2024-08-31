@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
 .alt-container {
     display: flex;
     width: 100%;
+    flex-direction: column;
     padding: 10px 10%;
     width: 80%;
     background-color: #4d4567;
@@ -54,6 +55,7 @@ body::-webkit-scrollbar {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 10px 10%;
     width: 80%;
@@ -177,61 +179,114 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
-.study-text {
-    width: 70%;
-}
-
-.study-button {
-    border-color: #4d4567;
-    border-radius: 20px;
-    background-color: #4d4567;
-    padding: 15px;
-    width: 20%;
-    transition-duration: 0.5s;
-    transition-property: all;
-}
-
-.study-button:hover {
-    border-radius: 30px;
-    background-color: #8c80AA;
-
-}
-
-.topic-section {
-    width: 100%;
-    padding: 1rem;
+.general-english {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.section-title {
-    font-size: 2rem;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.alt-section-title{
-    font-size: 2rem;
-    padding: 1rem;
-    font-weight: bold;
-
-}
-
-.resources {
+.general-english-title {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 
-.ap-resources {
-    width: 50%;
+.general-english-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
 }
 
-.general-resources {
-    width: 50%;
+.general-english-level-title {
+    width: fit-content;
+    padding: 15px;
+    background-color: #4d4567;
+    color: white;
+    cursor: pointer;
+    border: 1px #4d4567;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
+
+.general-english-level-title:hover {
+    background-color: #453c63;
+    box-shadow: 8px 5px 5px rgb(52, 35, 78);
+    border: 1px solid rgb(52, 35, 78);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.gs-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.ap-english {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ap-english-title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.ap-english-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+}
+
+.ap-english-level-title {
+    width: fit-content;
+    padding: 15px;
+    background-color: #171028;
+    color: white;
+    cursor: pointer;
+    border: 1px #171028;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.ap-english-level-title:hover {
+    background-color: #22193E;
+    box-shadow: 8px 5px 5px #2f254e;
+    border: 1px solid #2f254e;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.ap-english-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* --------bottom------ */
+
 
 .resource-list li a{
     text-decoration: none;
@@ -244,20 +299,10 @@ body::-webkit-scrollbar {
     color: #625E6C;
 }
 
-.alt-resource-list li a{
-    text-decoration: none;
-    text-decoration: underline;
-    color: snow;
-    transition-duration: 0.35s;
-}
-
-.alt-resource-list li a:hover{
-    color: #625E6C;
-}
-
 
 .contact-text {
     font-weight: 450;
+    font-size: 28px;
 }
 
 .contact-left{
@@ -281,8 +326,11 @@ body::-webkit-scrollbar {
     color: snow;
 }
 .btn.btn2{
-    display: inline-block;
-    background: black;
+    display: flex;
+    background: #453c63;
+    font-family: Poppins;
+    border: none;
+    border-radius: 10px;
     
 }
 .contact-right form{
@@ -293,11 +341,12 @@ form input, form textarea{
     width: 100%;
     border:0;
     outline: none;
-    background: #262626;
+    background: #453c63;
     padding: 15px;
     margin: 15px 0;
     color: rgb(255, 255, 255);
     border-radius: 6px;
+    font-family: Poppins;
 }
 form .btn2{
     padding: 14px 60px;
@@ -316,17 +365,36 @@ form .btn2{
 }
 .footer-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 10px 10%;
     width: 80%;
-    background-color: #25242B;
+    background-color: #181028;
     padding-bottom: 4rem;
+    justify-content: space-between;
+}
+.social-media-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    
+}
+.social-media-list li a{
+    color: white;
+}
+.social-media-list li a:hover{
+    color: #8278a3;
 }
 .copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #dfdfdf;
+    background: #25242B;
     font-weight: 300;
     margin-top: 20px;
 
@@ -410,7 +478,60 @@ form .btn2{
     
   }
 
-  .floating-link {
+  .arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-out */
+}
+
+/* Add this class when you want the arrow to fade out */
+.arrow-container.fade-out {
+    opacity: 0; /* Fully transparent */
+}
+
+/* Optional: The stop class from before, in case you want to stop movement too */
+.arrow-container.stop {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Styling for the down arrow */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 60px solid #453c63; /* Arrow color */
+    animation: float 1.5s infinite; /* Apply the floating animation */
+}
+
+/* Animation to create the floating effect */
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.floating-link {
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
@@ -428,6 +549,7 @@ form .btn2{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-6px);
+        transform: translateY(-4px);
     }
 }
+

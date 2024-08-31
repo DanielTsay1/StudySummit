@@ -749,6 +749,85 @@ function apScienceShow(letter) {
     }
 }
 
+function gEnglishShow(letter) {
+  document.getElementById('gs-research').style.display = 'none';
+  document.getElementById('gs-sem').style.display = 'none';
+  document.getElementById('gs-lang').style.display = 'none';
+  document.getElementById('gs-lit').style.display = 'none';
+
+  if(letter === 'a')
+  {
+    document.getElementById('gs-research').style.display = 'flex';
+    document.getElementById('gs-research').style.backgroundColor = '#22193E';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('gs-sem').style.display = 'flex';
+    document.getElementById('gs-sem').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('gs-lang').style.display = 'flex';
+    document.getElementById('gs-lang').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('gs-lit').style.display = 'flex';
+    document.getElementById('gs-lit').style.backgroundColor = '#22193E';
+  }
+ 
+}
+
+
+function apHistoryShow(letter) {
+  document.getElementById('ap-history-hugs').style.display = 'none';
+  document.getElementById('ap-history-gov').style.display = 'none';
+  document.getElementById('ap-history-push').style.display = 'none';
+  document.getElementById('ap-history-world').style.display = 'none';
+ 
+
+  if(letter === 'a')
+  {
+    document.getElementById('ap-history-hugs').style.display = 'flex';
+    document.getElementById('ap-history-hugs').style.backgroundColor = '#22193E';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('ap-history-gov').style.display = 'flex';
+    document.getElementById('ap-history-gov').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'c')
+  {
+    document.getElementById('ap-history-push').style.display = 'flex';
+    document.getElementById('ap-history-push').style.backgroundColor = '#22193E';
+  }
+  else if (letter === 'd')
+  {
+    document.getElementById('ap-history-world').style.display = 'flex';
+    document.getElementById('ap-history-world').style.backgroundColor = '#22193E';
+  }
+  
+}
+
+function gHistoryShow(letter) {
+  document.getElementById('gs-push').style.display = 'none';
+  document.getElementById('gs-world').style.display = 'none';
+
+
+  if(letter === 'a')
+  {
+    document.getElementById('gs-push').style.display = 'flex';
+    document.getElementById('gs-push').style.backgroundColor = '#22193E';
+  } 
+  else if (letter === 'b')
+  {
+    document.getElementById('gs-world').style.display = 'flex';
+    document.getElementById('gs-world').style.backgroundColor = '#22193E';
+  }
+
+ 
+}
+
 // AP science show content stuff
 
 // script.js

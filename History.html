@@ -62,7 +62,7 @@
                     </button>
                     <div class="dropdown-content">
                       <a href="#Hugs">AP Human Geography</a>
-                      <a href="#Gov">AP Gov</a>
+                      <a href="#Gov">AP Government</a>
                       <a href="#Push"> AP United States History</a>
                       <a href="#World">AP World</a>
                     
@@ -103,7 +103,16 @@
         <br>
         <br>
         <br>
-
+        <div class="arrow-container">
+            <div class="arrow-down"></div>
+      </div>
+        
+            <!-- Content goes here --><!-- Placeholder content -->
+        
+            <!-- Stopping point for the arrow -->
+           
+        
+           
         <div class="svg-divider-container">
             <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
@@ -148,18 +157,112 @@
                 <ellipse cx="625.5" cy="720.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 720.5)" fill="#403563"/>
             </svg>
         </div>
-
-
+    
+    
         
-    <div id = Hugs>
+        <div id="stop-point"></div>
+
+        <div id=UShistory></div>
+        <div id=World></div>
+
         <div class="alt-container">
-            <div class="topic-section">
-                <div class="section-title">
-                    AP Human Geography
+            <div class="general-history-title">General History</div>
+            <div class="general-history">
+                <div class="general-history-level">
+                    <button onclick="gHistoryShow('a')" class="general-history-level-title">US History</button>
+                    <div id="gs-push" class="gs-content">
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://openstax.org/subjects/humanities">
+                                    Openstax - textbook style content on US History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khanacademy.org/humanities/us-history">
+                                    Khan Academy - has resources for 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        Resources
+                <div class="general-history-level">
+                    <button onclick="gHistoryShow('b')" class="general-history-level-title">World History</button>
+                    <div id="gs-world" class="gs-content">
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://www.khanacademy.org/humanities/whp-origins">
+                                    Khan Academy - has resources for World History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://openstax.org/subjects/humanities">
+                                    Openstax - textbook style content on World History
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+                
+        <div class="svg-divider-container">
+            <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3777" y="147" width="425" height="171" fill="#403563"/>
+                <rect x="4202" y="926" width="2262" height="206" transform="rotate(180 4202 926)" fill="#171028"/>
+                <rect x="4202" y="805" width="463" height="113" transform="rotate(180 4202 805)" fill="#22193E"/>
+                <rect x="1984" y="926" width="1984" height="206" transform="rotate(180 1984 926)" fill="#171028"/>
+                <rect x="4202" y="755" width="2016" height="147" transform="rotate(180 4202 755)" fill="#22193E"/>
+                <rect x="462" y="720" width="462" height="112" transform="rotate(180 462 720)" fill="#22193E"/>
+                <rect x="2366" y="779" width="1984" height="171" transform="rotate(180 2366 779)" fill="#22193E"/>
+                <ellipse cx="3528.5" cy="805" rx="673.5" ry="72" transform="rotate(180 3528.5 805)" fill="#171028"/>
+                <ellipse cx="2572.5" cy="697" rx="632.5" ry="89" transform="rotate(180 2572.5 697)" fill="#22193E"/>
+                <ellipse cx="1654.5" cy="840.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 840.5)" fill="#171028"/>
+                <ellipse cx="625.5" cy="720" rx="625.5" ry="73" transform="rotate(180 625.5 720)" fill="#22193E"/>
+                <rect y="402" width="2262" height="205" fill="#30274D"/>
+                <rect y="523" width="462" height="112" fill="#22193E"/>
+                <rect x="2218" y="402" width="1984" height="205" fill="#30274D"/>
+                <rect y="573" width="2016" height="147" fill="#22193E"/>
+                <rect x="3739" y="607" width="463" height="113" fill="#22193E"/>
+                <rect x="1835" y="549" width="1984" height="171" fill="#22193E"/>
+                <ellipse cx="673.5" cy="522.5" rx="673.5" ry="72.5" fill="#30274D"/>
+                <ellipse cx="1629" cy="630.5" rx="633" ry="89.5" fill="#22193E"/>
+                <ellipse cx="2547.5" cy="487.5" rx="964.5" ry="85.5" fill="#30274D"/>
+                <ellipse cx="3576.5" cy="607.5" rx="625.5" ry="73.5" fill="#22193E"/>
+                <rect x="4202" y="523" width="2262" height="205" transform="rotate(180 4202 523)" fill="#30274D"/>
+                <rect x="4202" y="402" width="462" height="112" transform="rotate(180 4202 402)" fill="#403563"/>
+                <rect x="1984" y="523" width="1984" height="205" transform="rotate(180 1984 523)" fill="#30274D"/>
+                <rect x="4202" y="352" width="2016" height="147" transform="rotate(180 4202 352)" fill="#403563"/>
+                <rect x="463" y="318" width="463" height="113" transform="rotate(180 463 318)" fill="#403563"/>
+                <rect x="2367" y="376" width="1984" height="171" transform="rotate(180 2367 376)" fill="#403563"/>
+                <ellipse cx="3528.5" cy="402.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 402.5)" fill="#30274D"/>
+                <ellipse cx="2573" cy="294.5" rx="633" ry="89.5" transform="rotate(180 2573 294.5)" fill="#403563"/>
+                <ellipse cx="1654.5" cy="437.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 437.5)" fill="#30274D"/>
+                <ellipse cx="625.5" cy="317.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 317.5)" fill="#403563"/>
+                <rect width="2262" height="205" fill="#4D4567"/>
+                <rect y="121" width="462" height="112" fill="#403563"/>
+                <rect x="2218" width="1984" height="205" fill="#4D4567"/>
+                <rect y="171" width="2016" height="147" fill="#403563"/>
+                <rect x="1835" y="147" width="1984" height="171" fill="#403563"/>
+                <ellipse cx="673.5" cy="120.5" rx="673.5" ry="72.5" fill="#4D4567"/>
+                <ellipse cx="1629" cy="228.5" rx="633" ry="89.5" fill="#403563"/>
+                <ellipse cx="2547.5" cy="85.5" rx="964.5" ry="85.5" fill="#4D4567"/>
+                <ellipse cx="3576.5" cy="205.5" rx="625.5" ry="73.5" fill="#403563"/>
+            </svg>
+        </div>
+
+        <div id=apHugs></div>
+        <div id=apGov></div>
+        <div id=apPush></div>
+        <div id=apWorld></div>
+        <div class="container">
+            <div class="ap-history-title">AP History</div>
+            <div class="ap-history">
+
+                <div class="ap-history-level">
+                    <button onclick="apHistoryShow('a')" class="ap-history-level-title">AP Human Geography</button>
+                    <div id="ap-history-hugs" class="ap-history-content">
                         <ul class="resource-list">
                             <li>
                                 <a href="https://library.fiveable.me/ap-hug">
@@ -182,223 +285,201 @@
                                 </a>
                             </li> -->
                         </ul>
+                        </ul>
                     </div>
-                
-                    <!-- <div class="general-resources">
-                        Resources
+                </div>
+
+                <div class="ap-history-level">
+                    <button onclick="apHistoryShow('b')" class="ap-history-level-title">AP Government</button>
+                    <div id="ap-history-gov" class="ap-history-content">
                         <ul class="resource-list">
                             <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has videos and questions for all math K-12
+                                <a href="https://library.fiveable.me/ap-gov">
+                                    Fiveable - has guides and questions for AP Gov
                                 </a>
                             </li>
                             <li>
-                                <a href="https://mathigon.org/">
-                                    Mathigon - courses on math through the middle school and high school level
+                                <a href="https://myap.collegeboard.org/login">
+                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work
                                 </a>
                             </li>
                             <li>
-                                <a href="https://openstax.org/subjects/math">
-                                    Openstax - textbook style content on all high school math topics
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    <!--Math Section ^^-->
-    <div id = Gov>
-        <div class="container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    AP Government
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://fiveable.me/">
-                                    Fiveable - has guides and questions for all Science APs
+                                <a href="https://www.crackap.com/ap/us-government-and-politics/">
+                                    Crack AP - PLENTY of practice tests here only for AP Gov
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.khanacademy.org/humanities/ap-us-government-and-politics">
-                                    Khan Academy - has videos and questions fo
+                                    Khan Academy - has course work and practice questions for AP Gov
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="ap-history-level">
+                    <button onclick="apHistoryShow('c')" class="ap-history-level-title">AP US History</button>
+                    <div id="ap-history-push" class="ap-history-content">
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://library.fiveable.me/apush">
+                                    Fiveable - has guides and questions for AP US History
                                 </a>
                             </li>
                             <li>
                                 <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
+                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work 
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.crackap.com/index.html">
-                                    Crack AP - PLENTY of practice tests here for Science APs
+                                <a href="https://www.crackap.com/ap/us-history/">
+                                    Crack AP - PLENTY of practice tests here only for  AP US History
                                 </a>
                             </li>
                             <li>
-                                <a href="https://openstax.org/subjects/science">
-                                    Openstax - textbook style content on some Science APs
+                                <a href="https://www.khanacademy.org/humanities/ap-us-history">
+                                    Khan Academy - has course work and practice questions for AP US History
                                 </a>
                             </li>
                         </ul>
                     </div>
-                
-                    <!-- <div class="general-resources">
-                        General Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has videos and questions for most MS - HS sciences
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://phet.colorado.edu/">
-                                    PHET - interactive simulations on Physics, Chemisty, Earth Science, and Biology
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://openstax.org/subjects/science">
-                                    Openstax - textbook style content on Anatomy/Physiology, Astronomy, Biology, Chemistry, and Physics
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
-            </div>
-        </div>
-        <!--Science Section ^^-->
-    <div id = Push>
-        <div class="alt-container">
-            <div class="topic-section">
-                <div class="section-title">
-                    AP United States History
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
+                <div class="ap-history-level">
+                    <button onclick="apHistoryShow('d')" class="ap-history-level-title">AP World History</button>
+                    <div id="ap-history-world" class="ap-history-content">
                         <ul class="resource-list">
-                            <li>
-                                <a href="https://fiveable.me/">
-                                    Fiveable - has guides and questions for AP Lang & Lit
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work for all ELA APs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/index.html">
-                                    Crack AP - PLENTY of practice tests here only for AP Lang & Lit
-                                </a>
-                            </li>
+                            <ul class="resource-list">
+                                <li>
+                                    <a href="https://library.fiveable.me/ap-world">
+                                        Fiveable - has guides and questions for AP World History
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.khanacademy.org/humanities/world-history-project-ap">
+                                        Khan Academy - has courses for AP World History
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://myap.collegeboard.org/login">
+                                        AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.crackap.com/ap/world-history/">
+                                        Crack AP - PLENTY of practice tests here for AP World History
+                                    </a>
+                                </li>
                         </ul>
                     </div>
-                
-                    <!-- <div class="general-resources">
-                        General Resources
-                        <ul class="resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has videos and questions for all ELA K-9
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.elafree.com/">
-                                    ELAFree - resources on ELA related topics for all levels
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://openstax.org/details/books/writing-guide">
-                                    Openstax - textbook style content about writing composition
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </div>
     
-        <!--ELA section^^-->
-    <div id = World>
-        <div class="container">
-            <div class="topic-section">
-                <div class="alt-section-title">
-                    AP World
-                </div>
-                <div class="resources">
-                    <div class="ap-resources">
-                        AP Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://fiveable.me/">
-                                    Fiveable - has guides and questions for all history APs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has courses for AP US History, AP Gov., and AP World History
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://myap.collegeboard.org/login">
-                                    AP Classroom - ask your teacher to assign practices test/quizzes, there are also plenty of AP daily videos covering all course work all AP Sciences
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.crackap.com/index.html">
-                                    Crack AP - PLENTY of practice tests here for History APs
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    <div class="general-resources">
-                        General Resources
-                        <ul class="alt-resource-list">
-                            <li>
-                                <a href="https://www.khanacademy.org/">
-                                    Khan Academy - has resources for a lot of history content
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://openstax.org/subjects/humanities">
-                                    Openstax - textbook style content on World History and US History
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
+
+
+<div class="svg-divider-container">
+    <svg class="svg-divider" viewBox="0 0 4202 926" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="425" y="779" width="425" height="171" transform="rotate(180 425 779)" fill="#403563"/>
+        <rect width="2262" height="206" fill="#171028"/>
+        <rect y="121" width="463" height="113" fill="#22193E"/>
+        <rect x="2218" width="1984" height="206" fill="#171028"/>
+        <rect y="171" width="2016" height="147" fill="#22193E"/>
+        <rect x="3740" y="206" width="462" height="112" fill="#22193E"/>
+        <rect x="1836" y="147" width="1984" height="171" fill="#22193E"/>
+        <ellipse cx="673.5" cy="121" rx="673.5" ry="72" fill="#171028"/>
+        <ellipse cx="1629.5" cy="229" rx="632.5" ry="89" fill="#22193E"/>
+        <ellipse cx="2547.5" cy="85.5" rx="964.5" ry="85.5" fill="#171028"/>
+        <ellipse cx="3576.5" cy="206" rx="625.5" ry="73" fill="#22193E"/>
+        <rect x="4202" y="524" width="2262" height="205" transform="rotate(180 4202 524)" fill="#30274D"/>
+        <rect x="4202" y="403" width="462" height="112" transform="rotate(180 4202 403)" fill="#22193E"/>
+        <rect x="1984" y="524" width="1984" height="205" transform="rotate(180 1984 524)" fill="#30274D"/>
+        <rect x="4202" y="353" width="2016" height="147" transform="rotate(180 4202 353)" fill="#22193E"/>
+        <rect x="463" y="319" width="463" height="113" transform="rotate(180 463 319)" fill="#22193E"/>
+        <rect x="2367" y="377" width="1984" height="171" transform="rotate(180 2367 377)" fill="#22193E"/>
+        <ellipse cx="3528.5" cy="403.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 403.5)" fill="#30274D"/>
+        <ellipse cx="2573" cy="295.5" rx="633" ry="89.5" transform="rotate(180 2573 295.5)" fill="#22193E"/>
+        <ellipse cx="1654.5" cy="438.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 438.5)" fill="#30274D"/>
+        <ellipse cx="625.5" cy="318.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 318.5)" fill="#22193E"/>
+        <rect y="403" width="2262" height="205" fill="#30274D"/>
+        <rect y="524" width="462" height="112" fill="#403563"/>
+        <rect x="2218" y="403" width="1984" height="205" fill="#30274D"/>
+        <rect y="574" width="2016" height="147" fill="#403563"/>
+        <rect x="3739" y="608" width="463" height="113" fill="#403563"/>
+        <rect x="1835" y="550" width="1984" height="171" fill="#403563"/>
+        <ellipse cx="673.5" cy="523.5" rx="673.5" ry="72.5" fill="#30274D"/>
+        <ellipse cx="1629" cy="631.5" rx="633" ry="89.5" fill="#403563"/>
+        <ellipse cx="2547.5" cy="488.5" rx="964.5" ry="85.5" fill="#30274D"/>
+        <ellipse cx="3576.5" cy="608.5" rx="625.5" ry="73.5" fill="#403563"/>
+        <rect x="4202" y="926" width="2262" height="205" transform="rotate(180 4202 926)" fill="#4D4567"/>
+        <rect x="4202" y="805" width="462" height="112" transform="rotate(180 4202 805)" fill="#403563"/>
+        <rect x="1984" y="926" width="1984" height="205" transform="rotate(180 1984 926)" fill="#4D4567"/>
+        <rect x="4202" y="755" width="2016" height="147" transform="rotate(180 4202 755)" fill="#403563"/>
+        <rect x="2367" y="779" width="1984" height="171" transform="rotate(180 2367 779)" fill="#403563"/>
+        <ellipse cx="3528.5" cy="805.5" rx="673.5" ry="72.5" transform="rotate(180 3528.5 805.5)" fill="#4D4567"/>
+        <ellipse cx="2573" cy="697.5" rx="633" ry="89.5" transform="rotate(180 2573 697.5)" fill="#403563"/>
+        <ellipse cx="1654.5" cy="840.5" rx="964.5" ry="85.5" transform="rotate(180 1654.5 840.5)" fill="#4D4567"/>
+        <ellipse cx="625.5" cy="720.5" rx="625.5" ry="73.5" transform="rotate(180 625.5 720.5)" fill="#403563"/>
+    </svg>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
+        
+
 
         <div id="contact">
-        <div class="footer-container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="contact-text">Have a suggestion for resources? Contact us here!</h1>
-                    <!-- <p><i class="fa-regular fa-envelope"></i>...@gmail.com</p> -->
+            <div class="footer-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="contact-text">Have a suggestion for resources? Contact us here!</h1>
+                        <!-- <p><i class="fa-regular fa-envelope"></i>...@gmail.com</p> -->
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message and Links"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message and Links"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                <div class="social-media-right">
+                    <h2>Follow Us!</h2>
+                    <ul class="social-media-list">
+                        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                    </ul>
+                    <h2>Email Us Directly!</h2>
+                    <p>apadaptstudy@gmail.com</p>
                 </div>
             </div>
-        </div>
         <div class="copyrt">
             <p>© Copyright Daniel Tsay, Ethan Tay, Brian Lin. All Rights Reserved</p>
         </div>
-
 
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxG3D3ncXyYnsLAcUMzw9aVloPonEGBvBnOWgAJYJfJaBrWb4IfzVJT8cYhnU6ic1MH/exec'
@@ -417,5 +498,25 @@
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
+           <script>
+            // JavaScript directly in the HTML
+            document.addEventListener('DOMContentLoaded', function () {
+                const arrowContainer = document.querySelector('.arrow-container');
+                const stopPoint = document.querySelector('#stop-point');
+    
+                function handleScroll() {
+                    const stopPointPosition = stopPoint.getBoundingClientRect().top + window.scrollY;
+                    const scrollPosition = window.scrollY + window.innerHeight;
+    
+                    if (scrollPosition >= stopPointPosition) {
+                        arrowContainer.classList.add('fade-out');
+                    } else {
+                        arrowContainer.classList.remove('fade-out');
+                    }
+                }
+    
+                window.addEventListener('scroll', handleScroll);
+            });
+        </script>
     </body>
 </html>
