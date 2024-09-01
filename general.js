@@ -749,31 +749,33 @@ function apScienceShow(letter) {
     }
 }
 
-function gEnglishShow(letter) {
-  document.getElementById('gs-research').style.display = 'none';
-  document.getElementById('gs-sem').style.display = 'none';
-  document.getElementById('gs-lang').style.display = 'none';
-  document.getElementById('gs-lit').style.display = 'none';
+// ap science show content stuf ^^
+
+function apEnglishShow(letter) {
+  document.getElementById('ap-research').style.display = 'none';
+  document.getElementById('ap-sem').style.display = 'none';
+  document.getElementById('ap-lang').style.display = 'none';
+  document.getElementById('ap-lit').style.display = 'none';
 
   if(letter === 'a')
   {
-    document.getElementById('gs-research').style.display = 'flex';
-    document.getElementById('gs-research').style.backgroundColor = '#22193E';
+    document.getElementById('ap-research').style.display = 'flex';
+    document.getElementById('ap-research').style.backgroundColor = '#453c63';
   } 
   else if (letter === 'b')
   {
-    document.getElementById('gs-sem').style.display = 'flex';
-    document.getElementById('gs-sem').style.backgroundColor = '#22193E';
+    document.getElementById('ap-sem').style.display = 'flex';
+    document.getElementById('ap-sem').style.backgroundColor = '#453c63';
   }
   else if (letter === 'c')
   {
-    document.getElementById('gs-lang').style.display = 'flex';
-    document.getElementById('gs-lang').style.backgroundColor = '#22193E';
+    document.getElementById('ap-lang').style.display = 'flex';
+    document.getElementById('ap-lang').style.backgroundColor = '#453c63';
   }
   else if (letter === 'd')
   {
-    document.getElementById('gs-lit').style.display = 'flex';
-    document.getElementById('gs-lit').style.backgroundColor = '#22193E';
+    document.getElementById('ap-lit').style.display = 'flex';
+    document.getElementById('ap-lit').style.backgroundColor = '#453c63';
   }
  
 }
@@ -817,12 +819,12 @@ function gHistoryShow(letter) {
   if(letter === 'a')
   {
     document.getElementById('gs-push').style.display = 'flex';
-    document.getElementById('gs-push').style.backgroundColor = '#22193E';
+    document.getElementById('gs-push').style.backgroundColor = '#453c63';
   } 
   else if (letter === 'b')
   {
     document.getElementById('gs-world').style.display = 'flex';
-    document.getElementById('gs-world').style.backgroundColor = '#22193E';
+    document.getElementById('gs-world').style.backgroundColor = '#453c63';
   }
 
  
