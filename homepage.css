@@ -251,6 +251,23 @@ body::-webkit-scrollbar {
 }
 
 
+.svg-divider-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.svg-divider {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .contact-text {
     font-weight: 450;
     font-size: 28px;
@@ -327,7 +344,8 @@ form .btn2{
 .social-media-right {
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
+    margin-left: 20%;
+    width: 40%;
 }
 .social-media-list {
     display: flex;
@@ -341,6 +359,7 @@ form .btn2{
 .social-media-list li a:hover{
     color: #8278a3;
 }
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -357,14 +376,6 @@ form .btn2{
 
 }
 
-.polygon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #171028;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 87% 85%, 89% 25%, 10% 20%, 8% 80%, 0% 80%);
-    z-index: 1;
-}
 
 .floating-link {
     display: inline-block;

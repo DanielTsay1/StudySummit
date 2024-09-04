@@ -121,19 +121,88 @@ body::-webkit-scrollbar {
 
 /* navbar code^^*/
 
-.re-container {
+
+.svg-divider-container {
     display: flex;
-    flex-direction: row;
-    padding: 10px 10%;
-    width: 80%;
+    width: 100%;
+    height: auto;
+}
+.svg-divider {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
-.alt-re-container {
+
+.high-school-math {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+}
+
+.high-school-math-title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.hs-math-level {
+    margin-bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+}
+
+.hs-math-level-title {
+    width: fit-content;
+    padding: 15px;
+    background-color: #4d4567;
+    color: white;
+    cursor: pointer;
+    border: 1px #4d4567;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.hs-math-level-title:hover {
+    background-color: #453c63;
+    box-shadow: 8px 5px 5px rgb(52, 35, 78);
+    border: 1px solid rgb(52, 35, 78);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.hs-math-content {
+    display: none;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+.alt-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 10px 10%;
     width: 80%;
-    background-color: snow;
+    background-color: #4d4567;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10%;
+    width: 80%;
+    color: snow;
+    background-color: #171028;
 }
 
 .landing-container {
@@ -210,9 +279,6 @@ body::-webkit-scrollbar {
     font-weight: 300;
     margin-top: 20px;
 }
-
-
-
 
 
 .arrow-container {

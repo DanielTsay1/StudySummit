@@ -101,20 +101,6 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-.re-container {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 10%;
-    width: 80%;
-}
-
-.alt-re-container {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 10%;
-    width: 80%;
-    background-color: snow;
-}
 
 .landing-container {
     display: flex;
@@ -135,49 +121,11 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
 }
 
-.landing-button{
-    background-color: white;
-    font-size: 1.5rem;
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid white;
-    width: 20%;
-    align-self: center;
-}
 
-.section-container {
-    display: flex;
-    flex-direction: column;
-}
 
-.section-title {
-    font-size: 2rem;
-    padding: 1rem 0;
-    font-weight: bold;
-}
-.section-content {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
 
-.conclusion {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    background: snow;
-}
 
-.conclusion-title {
-    font-size: 2rem;
-    padding: 1rem 0;
-    font-weight: bold;
-}
 
-.conclusion-text {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
 
 
 .footer-container {
