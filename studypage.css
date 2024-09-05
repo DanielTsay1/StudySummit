@@ -134,13 +134,13 @@ body::-webkit-scrollbar {
 }
 
 
-.high-school-math {
+.subguides-container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.high-school-math-title {
+.guides-title {
     display: flex;
     font-size: 36px;
     font-weight: bold;
@@ -148,7 +148,7 @@ body::-webkit-scrollbar {
     margin-bottom: 20px;
 }
 
-.hs-math-level {
+.subguide {
     margin-bottom: 10px;
     border-top: 0;
     border-right: 0;
@@ -156,7 +156,14 @@ body::-webkit-scrollbar {
     border-bottom: 3px solid white;
 }
 
-.hs-math-level-title {
+.subguide-description {
+    display: flex;
+    margin-left: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.subguide-link {
     width: fit-content;
     padding: 15px;
     background-color: #4d4567;
@@ -172,7 +179,7 @@ body::-webkit-scrollbar {
     margin-bottom: 10px;
 }
 
-.hs-math-level-title:hover {
+.subguide-link:hover {
     background-color: #453c63;
     box-shadow: 8px 5px 5px rgb(52, 35, 78);
     border: 1px solid rgb(52, 35, 78);
@@ -180,11 +187,30 @@ body::-webkit-scrollbar {
     transition-duration: 500ms;
 }
 
-.hs-math-content {
-    display: none;
+.alt-subguide-link {
+    width: fit-content;
     padding: 15px;
-    border-radius: 20px 20px 0 0;
+    background-color: #171028;
+    color: white;
+    cursor: pointer;
+    border: 1px #171028;
+    border-radius: 20px;
+
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
+
+.alt-subguide-link:hover {
+    background-color: #22193E;
+    box-shadow: 8px 5px 5px #2f254e;
+    border: 1px solid #2f254e;
+    transition: all;
+    transition-duration: 500ms;
+}
+
 
 .alt-container {
     display: flex;
