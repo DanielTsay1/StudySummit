@@ -173,6 +173,8 @@ body::-webkit-scrollbar {
 .study-text {
     width: 80%;
     margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .study-button {
