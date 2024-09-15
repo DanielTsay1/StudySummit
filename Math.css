@@ -395,15 +395,7 @@ form .btn2{
 .social-media-list li a:hover{
     color: #8278a3;
 }
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #25242B;
-    font-weight: 300;
-    margin-top: 20px;
 
-}
 #msg{
     color: #25242B;
     /* margin-top: -10px; */

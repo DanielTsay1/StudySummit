@@ -1,0 +1,170 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #171028; /*background color*/
+    margin: 0 0;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    color: white; /*general text color*/
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.menu-button {
+    display: none;
+    padding: 15px;
+    border:rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: snow;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #4d4567; /*navbar background color*/
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 1rem;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.nav-home {
+    display: flex;
+    width: 15%;
+    margin: 0 3%;
+}
+
+.nav-home-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav-home-group img{
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 5px  15px;
+    transition: .5s ease;
+    border-radius: 15px;
+
+}
+
+/* -------------hover affect for nav bar-------------- */
+.nav-item:hover{
+    background-color: #8c80AA; /*hover color for navbar*/
+    border-radius: 15px;
+    transition-duration: all 0.7s ease-in-out; 
+}
+/* -------------end------------ */
+
+.floating-link {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+    transition: .7s ease;
+
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* navbar code^^*/
+
+
+.wip-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15%;
+    width: 70%;
+}
+
+
+.wip {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 6% 0 4%;
+    align-self: center; 
+}
+
+.wip-header {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wip-caption {
+    display: flex;
+    align-self: center; 
+    text-align: center;
+    font-size: 36px;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    align-self: center; 
+    text-align: center;
+    font-size: 36px;
+}
+
+.sm-text {
+    color: white;
+    text-decoration: none;
+}
+
+.sm-text:hover {
+    color: rgb(91, 79, 114);
+    text-decoration: underline;
+}
