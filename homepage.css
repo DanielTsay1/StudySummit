@@ -91,6 +91,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 } 
 
 .nav-home-group img{
