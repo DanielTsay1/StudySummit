@@ -56,6 +56,10 @@ let timerInterval;
 let totalSeconds = 0;
 let isRunning = false;
 let isPaused = false;
+// let timerInterval;
+// let totalSeconds = 0;
+// let isRunning = false;
+// let isPaused = false;
 
 function updateTimeDisplay() {
     let hours = Math.floor(totalSeconds / 3600);

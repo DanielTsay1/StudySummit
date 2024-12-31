@@ -13,6 +13,9 @@ body{
 body::-webkit-scrollbar {
     width: 0px;
 }
+/* body::-webkit-scrollbar {
+    width: 0px;
+} */
 
 .overlay {
     position: fixed;
